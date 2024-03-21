@@ -2163,6 +2163,9 @@ main {
   #ERPHeader .images .text .buttonHeader {
     display: inline-block;
   }
+  #ERPHeader .images .text .buttonHeader button:hover {
+    color: #1E1B39;
+  }
   #bannerPaymentERP {
     width: 100vw;
     height: auto;

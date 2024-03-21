@@ -282,6 +282,11 @@ main{
                 }
                 .buttonHeader{
                     display: inline-block;
+                    button{
+                        &:hover{
+                            color: $color-dark-primary;
+                        }
+                    }
                 }
             }
         }
