@@ -1459,6 +1459,11 @@ main {
     color: #304FFF;
   }
 }
+@media (max-width: 1199px) {
+  #containerHeader .textHeader .buttonHeader .btnVideo {
+    display: none;
+  }
+}
 #form {
   display: grid;
   grid-template-areas: "image" "form";
