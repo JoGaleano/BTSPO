@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="manifest" href="../assets/site.webmanifest">
+    <link rel="mask-icon" href="../assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/index.js"></script>
+
+    <title>SPO ERP</title>
+</head>
+<body>
+    <!-- Navbar-->
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="../index.html"><img src="../assets/SPO_white_logo.png" alt="logo BT SPO"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#containerERP">ERP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#containerFQA">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#containerPayment">Precio</a>
+              </li>
+            </ul>
+            <form class="container-fluid justify-content-start">
+                <button class="btn btn-outline-success me-2" type="button" ><a href="spoDemo.html" target="_blank">Contáctanos</a></button>
+              </form>
+          </div>
+
+        </div>
+    </nav> 
+
+    <main>
+        <header id="ERPHeader">
+            <div class="title" data-aos="flip-up">
+                <h3>¡Da el paso a la Gestión Inteligente!</h3>
+                <p>Descubre el potencial de tu PyMe con SPO</p>
+            </div>
+
+            <div class="images" data-aos="fade-up-right">
+                <div class="img">
+                    <img src="../assets/erp_spo_page.png" alt="ERP SPO">
+                </div>
+                <div class="text" data-aos="fade-up-left">
+                    <p>Maximiza la eficiencia en cada venta y transforma la experiencia de tus clientes con nuestro sistema. ¿Interesado en agilizar tu operación?</p>
+                    <div class="buttonHeader">
+                        <button class="buttonPrimary btnVideo" data-bs-toggle="modal" data-bs-target="#videoModal">Mira todo lo que puede lograr</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Modal-->
+        <div class="modal fade " id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <video controls>
+                <source src="../assets/03.BT-SPO_Que_Hacemos_vlarga_español.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+        <!--Banner-->
+        <div id="bannerPaymentERP">
+            <div class="spoERPPaymentText">
+                <p>
+                    Pagos a un toque: rápidos, seguros, sin complicaciones
+                </p>
+                <p class="accentSpoERP">
+                    Eleva la experiencia de compra con opciones de pago para cada estilo. Un clic, un toque, un escaneo: tú eliges. Simplifica cada transacción con nuestra solución integral.
+                </p>
+            </div>
+            <div class="paymentIcon">
+                
+            </div>
+        </div>
+
+        <!-- Productos-->
+        <section id="containerERP">
+
+            <div class="titleProduct" data-aos="fade-down-right">    
+                <h2>Descubre el poder de <span>SPO</span></h2>
+                <p>Mantén tu negocio siempre un paso adelante.</p>
+            </div>
+
+            <!-- Productos-->
+            <article class="product erp" data-aos="fade-down-right">
+                <div class="textProduct">
+                    <div class="text">
+                        <h2>Productos</h2>
+                        <div>
+                            <p>Optimiza la gestión de tu inventario con facilidad.</p>
+                            <p><span>Simplemente agrega tus productos y establece un umbral de stock personalizado.</span></p>
+                            <p>Nuestro sistema inteligente se encargará de monitorear tus niveles de inventario y te alertará automáticamente sobre el estado de tus productos.</p>
+                        </div>
+                    </div>
+
+                    <div class="imageCard">
+                        <img src="../assets/productos_ERP.png" alt="productos">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cajas -->
+            <article class="product" data-aos="fade-down-left">
+                <div class="textProduct gridInverso">
+                    <div class="text">
+                        <h2>Cajas</h2>
+                        <div>
+                            <p>Seguimiento de ventas y transacciones con desglose detallados por métodos de pago.</p>
+                            <p><span>Acceso rápido a los detalles de cada venta, mejorando la capacidad de análisis y planificación estratégica.</span></p>
+                            <p>Sistema que facilita operaciones cotidianas permitiendo gestionar las cajas de manera eficiente.</p>
+                            <p>Facilita la gestión de efectivo al permitir gestionar el inicio y cierre de cajas.</p>
+                        </div>
+                    </div>
+
+                    <div class="imageCard">
+                        <img src="../assets/cajas_ERP.png" alt="cajas">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Combos-->
+            <article class="product " data-aos="fade-down-right">
+                <div class="textProduct">
+                    <div class="text">
+                        <h2>Combos</h2>
+                        <div>
+                            <p>Seguimiento de ventas y transacciones con desglose detallados por métodos de pago.</p>
+                            <p> <span>Ajusta tus combos según el perfil de cada cliente, maximizando la relevancia y el impacto.</span></p>
+                            <p>Decide en el momento si tus clientes pueden ver o no los combos, permitiéndote ajustar tus estrategias al instante.</p>
+                        </div>
+                    </div>
+
+                    <div class="imageCard">
+                        <img src="../assets/combos_ERP.png" alt="combos">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Gastos-->
+            <article class="product " data-aos="fade-down-left">
+                <div class="textProduct gridInverso">
+                    <div class="text">
+                        <h2>Gastos</h2>
+                        <div>
+                            <p>Observa de un vistazo todos tus gastos, organizados y categorizados por tipo, para una gestión financiera simplificada.</p>
+                            <p><span>Añade nuevos gastos de forma rápida y sencilla, ya sean gastos recurrentes o personalizados, para mantener tus cuentas al día.</span></p>
+                            <p>Cada vez que actualices tu stock, el sistema registra automáticamente el gasto asociado, garantizando una contabilidad precisa.</p>
+                        </div>
+                    </div>
+            
+                    <div class="imageCard">
+                        <img src="../assets/gastos_ERP.png" alt="gastos">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Usuarios-->
+            <article class="product " data-aos="fade-down-right">
+                <div class="textProduct">
+                    <div class="text">
+                        <h2>Usuarios</h2>
+                        <div>
+                            <p>Agrega a tus empleados al sistema y organiza tu fuerza laboral con facilidad, asignando roles y permisos específicos.</p>
+                            <p> <span>Asigna a tus empleados a las sucursales correspondientes, manteniendo un control preciso de dónde y cuándo trabajan.</span></p>
+                            <p>Mantén el mando sobre quién accede a qué información y tareas, optimizando el flujo de trabajo y la seguridad de tus datos.</p>
+                        </div>
+                    </div>
+                        
+                    <div class="imageCard">
+                        <img src="../assets/usuarios_ERP.png" alt="Usuarios">
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!--Banner Publicidad-->
+        <div id="bannerStartERP">
+            <div class="spoERPStartText">
+                <h3>¿Estas listo para comenzar a utilizar SPO ERP?</h3>
+                <div class="itemTextERP">
+                    <div>
+                        <p class="number">1</p>
+                        <p class="itemERPStart">Agenda una demo.</p>
+                    </div>
+                    <div>
+                        <p class="number">2</p>
+                        <p class="itemERPStart">Selecciona el plan que se adecua a tu negocio.</p>
+                    </div>
+                    <div>
+                        <p class="number">3</p>
+                        <p class="itemERPStart">Ten disponible una computadora o tableta para utilizar el sistema. ¡Listo!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="startImageERP">
+                <img src="../assets/banner_ERP_start.png" alt="Mockup sistema ERP">
+                
+            </div>
+        </div>
+
+        <!--FQA's-->
+        <div id="containerFQA">
+            <div class="text">
+                <h3>
+                    Preguntas frecuentes
+                </h3>
+            </div>
+        
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Cómo puedo comenzar a utilizar SPO ERP?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Inicia tu viaje hacia la eficiencia con SPO ERP. Simplemente programa una demostración interactiva completando nuestro breve formulario <span><a href="">aquí</a></span>. Un experto de nuestro equipo te acompañará paso a paso, resolviendo tus inquietudes y mostrándote cómo nuestro sistema puede transformar tu negocio. Elige tu plan ideal y comienza a disfrutar de los beneficios de SPO ERP desde cualquier computadora o tablet. ¡Así de fácil!</div>
+                    </div>
+                </div>
+        
+        
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Qué tan fácil es de instalar y comenzar a usar los productos?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ¿Cuáles son los beneficios de utilizar SPO ERP?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        ¿Qué incluye el SPO ERP?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                    </div>
+        
+        
+        
+                </div>
+        </div>
+
+        <!-- banner pagos-->
+        <div id="bannerPayment" class="ERPSection">
+            <div class="text">
+                <h3>
+                    Selecciona el plan que mejor se ajuste a tu negocio
+                </h3>
+                <p>
+                    BTSPO ofrece un rango de planes diseñados para adaptarse a las PyMes. Selecciona el plan según las necesidades de tu negocio.
+                </p>
+            </div>
+        </div>
+
+        <!-- Payment -->
+        <section id="containerPayment" >
+
+                <div class="card">
+                    <div class="title">
+                        <p>FUNCIONALIDADES ADICIONALES</p>
+                    </div>
+
+                    <div class="description">
+                        Para empresas que buscan generar un salto tecnológico para el éxito.
+                    </div>
+
+                    <div class="preice">
+                        <p>A partir de:</p>
+                        <h2>$10 USD<span>/Mes</span></h2>
+                    </div>
+
+                    <div class="functionalities">
+                        <h3>Módulos disponibles:</h3>
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Reportes basado en AI que proporciona estrategias para incremento de ventas.</p>
+                        </div>
+
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Reportes de productos de la competencia directa e indirecta.</p>
+                        </div>
+
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Transacciones mensuales  inferiores a 300 y ticket promedio menor a 350 MXN.</p>
+                        </div>
+                        
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Respaldo de productos, precios, ventas e inventario en la nube.</p>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button class="buttonCardPayment"><a href="../views/spoDemo.html" target="_blank">Agendar una demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="card card02">
+                    <div class="title">
+                        <p>FUNCIONALIDADES ESTANDÁR</p>
+                    </div>
+
+                    <div class="description">
+                        Para pequeñas empresas que buscan uno o dos sistemas para comenzar, incluye un POS gratuito.
+                    </div>
+
+                    <div class="preice">
+                        <p>A partir de:</p>
+                        <h2>$0 <span>/Mes</span></h2>
+                    </div>
+
+                    <div class="functionalities">
+                        <h3>Módulos disponibles:</h3>
+                            <div class="SPO">
+                                <div>
+                                    <img src="../assets/N_Check.svg" alt="check">
+                                    <p>SPO ERP</p>
+                                </div>
+                                <div class="subItem">
+                                    <div>
+                                    <img src="../assets/N_Check_blue.svg" alt="check">
+                                    <p>Productos</p>
+                                    </div>
+                                    <div>
+                                    <img src="../assets/N_Check_blue.svg" alt="check">
+                                    <p>Cajas</p>
+                                    </div>
+                                    <div>
+                                    <img src="../assets/N_Check_blue.svg" alt="check">
+                                    <p>Usuarios</p>
+                                    </div>
+                                    <div>
+                                    <img src="../assets/N_Check_blue.svg" alt="check">
+                                    <p>Gastos</p>
+                                    </div>
+                                    <div>
+                                    <img src="../assets/N_Check_blue.svg" alt="check">
+                                    <p>Combos</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="../assets/N_Check.svg" alt="check">
+                                <p>Venta Rápida</p>
+                            </div>
+
+                            <div class="item">
+                                <img src="../assets/N_Check.svg" alt="check">
+                                <p>Reportes de ventas</p>
+                            </div>
+
+                            <div class="item">
+                                <img src="../assets/N_Check.svg" alt="check">
+                                <p>Operar sin internet</p>
+                            </div>
+
+                    </div>
+                    
+
+                    <div class="button">
+                        <button class="buttonCardPayment"><a href="../views/spoDemo.html" target="_blank">Agendar una demo</a></button>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="title">
+                        <p>FUNCIONALIDADES ADICIONALES</p>
+                    </div>
+
+                    <div class="description">
+                        Para pequeñas empresas que buscan uno o dos sistemas para comenzar,
+                    </div>
+
+                    <div class="preice">
+                        <p>A partir de:</p>
+                        <h2>$399 USD <span>/Mes</span></h2>
+                    </div>
+
+                    <div class="functionalities">
+                        <h3>Suscripción individual por módulo:</h3>
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Para múltiples cajas, abarrotes y/o supermercados.</p>
+                        </div>
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Incluye los módulos de la funcionalidades estándar.</p>
+                        </div>
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Respaldo de productos, precios, ventas e inventario en la nube.</p>
+                        </div>
+                        <div>
+                            <img src="../assets/I_Check.svg" alt="check">
+                            <p>Sin limite de transacciones ni ticket promedio.</p>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button class="buttonCardPayment"><a href="../views/spoDemo.html" target="_blank">Agendar una demo</a></button>
+                    </div>
+                </div>
+
+              
+
+        </section>
+        
+        <!-- Footer -->
+        <footer id="containerFooter" >
+            <h3>¿Todo listo para llevar tu negocio al siguiente nivel?</h3>
+            <p class="subtitle">La configuración es rápida y segura</p>
+            <button><a href="../views/spoDemo.html" target="_blank">Solicita una demo<img src="assets/arrow_footer.svg" alt=""></a></button>
+            <p class="copyRight">Copyright © 2024  BT SPO | All Rights Reserved </p>
+        
+        </footer>
+
+
+    </main>
+
+        <!-- Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            duration: 1200,
+            delay: 100,
+            once: true
+        });
+    </script>
+</body>
+</html>

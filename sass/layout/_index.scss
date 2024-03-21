@@ -1,0 +1,1453 @@
+
+/*MOBILE FIRST*/
+
+body{
+    overflow-x: hidden;
+
+}
+
+
+main{
+    margin: 0;
+}
+
+#containerHeader{
+    width: 100vw;
+    background: $color-degradado-primary;
+    background-image: url(../../assets/section.header.mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $color-dark-primary;
+    height: auto;
+    padding-top: 8vh;
+    .slogan{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .textSlogan{
+            height: auto;
+            .titleSlogan{
+                font-weight: 900;
+                font-size: 14vw;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                margin-bottom: -4%;
+                text-transform: uppercase;
+                text-align: end;
+            }
+
+            .accentText{
+                color: $color-accent-primary-yellow;
+            }
+        }
+
+        .imageSlogan{
+            align-self: center;
+            margin-top: 20px;
+            img{
+                width: 80vw;
+            }
+    
+        }
+
+    }
+
+    .textHeader{
+        width: 80vw;
+        margin: 32px auto 40px;
+        p{
+            color: $color-white;
+            font-weight: 400;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .buttonHeader{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+        }
+    }
+
+}
+
+
+#bannerCountry{
+    height: auto;
+    margin: 0;
+    width: 100vw;
+    padding: 16px;
+    margin-top: 4vh;
+    background-color: $color-dark-primary;
+    border-top: 1px solid $color-accent-primary-cian;
+    .flags{
+        width: 80vw;
+        margin: 16px auto 12px;
+        img{
+            padding-right: 12px;
+        }
+    }
+    .bannerCountryText{
+        width: 80vw;
+        margin: 0 auto;
+        p{
+            font-weight: 400;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            color: $color-white;
+            margin-bottom: 8px;
+        }
+        .accentText{
+            color: $color-accent-primary-yellow;
+        }
+    }
+
+}
+
+#containerProducts{
+width: 100vw;
+    .titleProduct{
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 4vh;
+        h2{
+            font-weight: 900;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+        }
+        p{
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-grayscale-grey-p8;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .product{
+        /*background-image: url(../../assets/bg_card_product.png);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-color: $color-card; */
+        width: 80vw;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        /*box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;*/
+        
+        .imageCard{
+            margin-top: 4vh;
+            img{
+                width: 80%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .textProduct{
+            margin-top: 4vh;
+            padding: 10%;
+            h3{
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-dark-primary;
+                font-size: 1.5rem;
+            }
+            p{
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-grayscale-grey-p8;
+                font-size: 1.2rem;
+            }
+            button{
+                width: 100%;
+                font-size: 1.2rem;
+                height: 48px;
+            }
+
+        }
+    }
+}
+
+#bannerPayment{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 32px;
+    background-color: $color-dark-primary;
+    border-top: 1px solid $color-accent-primary-cian;
+    .payment{
+        width: 80vw;
+        margin: 20px auto 12px;
+        img{
+            padding-right: 12px;
+            width: 30vw;
+        }
+        p{
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-white;
+        }
+    }
+
+    .bannerPaymentText{
+        width: 80vw;
+        margin: 0 auto;
+        p{
+            font-weight: 400;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-white;
+            margin-bottom: 8px;
+        }
+        .accentText{
+            color: $color-accent-primary-yellow;
+        }
+    }
+
+}
+
+#containerkitchen{
+    width: 100vw;
+    display: grid;
+    padding-top: 0vh;
+    grid-template-areas: 
+    'text'
+    'image';
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    .imageKitchen{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 4vh;
+        grid-area: image;
+        img{
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
+    .containerTextKitchen{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 4vh;
+        grid-area: text;
+        h3{
+            font-weight: 900;
+            font-size: 6vw;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-dark-primary;
+            span{
+                color: $color-indigo-A400;
+            }
+        }
+        .itemTextKitchen{
+            margin-top: 24px;
+            div{
+                display: flex;
+                flex-direction: row;
+                img{
+                    width: 24px;
+                }
+                p{
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    color: $color-grayscale-grey-p8;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+            }
+            
+        }
+    }
+}
+
+#containerOrdenes{
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'text'
+    'image';
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 0;
+    .imageOrdenes{
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 4vh;
+        grid-area: image;
+        img{
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
+    .containerTextOrdenes{
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 8vh;
+        grid-area: text;
+        h3{
+            font-weight: 900;
+            font-size: 6vw;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-dark-primary;
+            span{
+                color: $color-indigo-A400;
+            }
+        }
+        .itemTextOrdenes{
+            margin-top: 24px;
+            p{
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                color: $color-grayscale-grey-p8;
+                span{
+                    background-color: $color-dark-primary;
+                    color: $color-white;
+                    display: inline-block;
+                    width: 8%;
+                    text-align: center;
+                    margin-right: 5%;
+                    border-radius: 2px;
+                    
+                }
+            }
+        }
+    }
+}
+
+#bannerPayment{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
+        h3{
+            font-weight: 900;
+            font-size: 9vw;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-accent-primary-yellow;
+
+        }
+        p{
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            color: $color-white;
+            font-weight: 400;
+            font-size: 4vw;
+        }
+    }
+}
+
+#containerPayment{
+    width: 100vw;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+        .card {
+            max-width: 90vw;
+            margin: 10px auto;
+            text-align: center;
+            padding-bottom: 6vh;
+            border-radius: 8px;
+            transition: all ease 0.5s;
+            position: relative;
+
+            .title{
+                background-color: $color-dark-primary;
+                color: $color-white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 4vh;
+                padding-left: 4vh;
+                border-bottom: 1px solid $color-accent-primary-cian;
+                border-radius: 8px 8px 0px 0px;
+                p{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 4vw;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                }
+            }
+            .description{
+                color: $color-dark-primary;
+                font-weight: 400;
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                padding: 4vh;
+                text-align:start ;
+                font-size: 16px;
+            }
+
+            .preice{
+                p{
+                    color: $color-indigo-A700;
+                    font-weight: 600;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    padding: 1vh 4vh;
+                    text-align:start ;
+                    font-size: 16px;
+                }
+                h2{
+                    color: $color-indigo-A700;
+                    font-size: 6.5vh;
+                    font-weight: 900;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    span{
+                        font-size: 4.5vh;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .functionalities{
+                padding-bottom: 8vh;
+                h3{
+                    color: $color-dark-primary;
+                    font-weight: 400;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    padding: 4vh 4vh 2vh 4vh;
+                    text-align:start ;
+                    font-size: 14px;
+
+                }
+
+                div{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 90%;
+                    margin-left: 5%;
+                    img{
+                        margin-right: 12px;
+                    }
+                    p{
+                        font-weight: 600;
+                        margin-bottom: 24px;
+                        color: $color-dark-primary;
+                        font-weight: 400;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        text-align:start ;
+
+                    }
+                }
+
+            }
+
+            .button{
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: 50%; 
+                transform: translateX(-50%); 
+                .buttonCardPayment{
+                    background-color: $color-indigo-A700;
+                    border: 2px solid $color-indigo-A700;
+                    transition: background-position 0.5s ease;
+                    width: 70vw;
+                    height: 48px;
+                    a{
+                        color: $color-white;
+                        font-size: 1.2rem;
+                    }
+                    &:hover{
+                        background-color: $color-accent-primary-yellow;
+                        border: 2px solid $color-accent-primary-yellow;
+                        background-position: 0 100%;
+                        a{
+                            color: $color-dark-primary;
+                        }
+                    }
+                 }
+            }
+            
+          }
+
+          .card02{
+            max-width: 90vw;
+            margin: 10px auto;
+            text-align: center;
+            padding-bottom: 6vh;
+            border-radius: 8px;
+            transition: all ease 0.5s;
+            position: relative;
+            background-image: url(../../assets/bg_card_payment.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-color: $color-dark-primary;
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+            .description{
+                color: $color-white;
+            }
+
+            .preice{
+                p{
+                    color: $color-accent-primary-yellow;
+                }
+                h2{
+                    color: $color-white;
+                }
+            }
+            
+            .functionalities{
+                h3{
+                    color: $color-white;
+
+                }
+                .item{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 90%;
+                    margin-left: 8%;
+                    img{
+                        margin-right: 12px;
+                    }
+                    p{
+                        font-weight: 600;
+                        margin-bottom: 24px;
+                        color: $color-white;
+                        font-weight: 400;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        text-align:start ;
+
+                    }
+                }
+                .SPO{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    div{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 100%;
+                        margin-left: 3%;
+                        img{
+                            margin-right: 12px;
+                        }
+                        p{
+                            font-weight: 600;
+                            margin-bottom: 24px;
+                            color: $color-white;
+                            font-weight: 400;
+                            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                            text-align:start ;
+                        }
+                    }
+                    .subItem{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction:column;
+                        width: 100%;
+                        margin-left: 8%;
+                        margin-top: 0px;
+                        div{
+                            p{
+                                color: $color-white;
+                            }
+                        }
+                    }
+                    
+                }
+
+            }
+
+            .button{
+                .buttonCardPayment{
+                    width: 65vw;
+                    background-color: $color-accent-primary-yellow;
+                    border: 2px solid $color-accent-primary-yellow;
+                    a{
+                        color: $color-dark-primary;
+                    }
+                }
+            }
+
+        }
+      
+      
+
+}
+
+#containerFQA{
+    margin-top: 12vh;
+    width: 100%;
+    margin-left: 10%;
+    .text{
+        text-align: center;
+        margin-bottom: 4vh;
+        h3{
+            font-weight: 900;
+            font-size: 5.5vw;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-dark-primary;
+        }
+    }
+    #accordionFlushExample{
+        .accordion-item{
+            .accordion-header{
+                button{
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    font-weight: 600;
+                }
+            }
+            .accordion-body{
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                span{
+                    a{
+                        color: $color-indigo-A700;
+                    }
+                }
+            }
+
+            .accordion-button:not(.collapsed) {
+                background-color: transparent;
+                color: $color-indigo-A700;
+            }
+
+                            
+        }
+    }
+}
+
+
+/*LAPTOP*/
+@media(min-width:1200px){
+
+    body{
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    main{
+        width: 100vw;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    #containerHeader{
+        background: $color-degradado-primary;
+        background-image: url(../../assets/section.header.mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $color-dark-primary;
+        height: auto;
+        padding-top: 0vh;
+        .slogan{
+            margin: 15vh auto 0; 
+            display: grid;
+            grid-template-areas: 'text image';
+            .textSlogan{
+                grid-area: 'text';
+                height: auto;
+                .titleSlogan{
+                    font-weight: 900;
+                    font-size: 8vw;
+                    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                    color: $color-white;
+
+                    text-transform: uppercase;
+                    text-align: end;
+                }
+    
+                .accentText{
+                    color: $color-accent-primary-yellow;
+                }
+            }
+    
+            .imageSlogan{
+                grid-area: 'text';
+                align-self: center;
+                margin-top: 20px;
+                img{
+                    width: 50vw;
+                }
+        
+            }
+    
+        }
+    
+        .textHeader{
+            width: 80%;
+            margin: 32px auto 40px;
+            .text{
+                margin-top: 8vh;
+                margin-bottom: 5vh;
+                p{
+                    color: $color-white;
+                    font-weight: 400;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    font-size: 2.5vh;
+                    margin-top: -20px;
+                }
+            }
+
+            .buttonHeader{
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 24px;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+            }
+            .btnVideo{
+                &:hover{
+                    color: $color-dark-primary;
+                }
+            }
+        }
+    
+    }
+
+    .modal-dialog{
+        margin-left: 20%;
+        .modal-content{
+            background-color: $color-bg-blur;
+            backdrop-filter: blur(12px);
+            border: none;
+            width: 60vw !important;
+            .modal-header{
+                .btn-close{
+                    color: $color-accent-primary-yellow !important;
+                }
+            }
+        }
+        .modal-body{
+            video{
+                width: 100%;
+            }
+        }
+    }
+
+    #bannerCountry{
+        height: auto;
+        margin: 0;
+        padding: 32px;
+        background-color: $color-dark-primary;
+        border-top: 1px solid $color-accent-primary-cian;
+        display: grid;
+        grid-template-areas: 'text flag';
+        justify-content: space-between;
+        .flags{
+            grid-area: flag;
+            width: 90vw;
+            margin: 20px auto 12px;
+            img{
+                padding-right: 12px;
+            }
+        }
+        .bannerCountryText{
+            grid-area: text;
+            width: 80vw;
+            margin: 0 auto;
+            padding-left: 8%;
+            p{
+                font-weight: 400;
+                font-size: 1.2rem;
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                margin-bottom: 8px;
+            }
+            .accentText{
+                color: $color-accent-primary-yellow;
+            }
+        }
+    
+    }
+
+    #containerProducts{
+        width: 100vw;
+            .titleProduct{
+                width: 80vw;
+                margin: 0 auto;
+                padding-top: 8vh;
+                h2{
+                    font-weight: 900;
+                    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                    color: $color-grayscale-grey-p8;
+                    font-size: 1.2rem;
+                }
+
+        
+            }
+        
+            .product{
+                background-color: transparent;
+                width: 80vw;
+                height: auto;
+                margin: 0px auto;
+                display:grid;
+                grid-template-areas: 'image text';
+                border-radius: 4px;
+                margin-bottom: 40px;
+                /*box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;*/
+                transition: all .5s ease;
+                
+                .imageCard{
+                    grid-area: 'image';
+                    margin-top: 4vh;
+                    img{
+                        width: 80%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .textProduct{
+                    grid-area: 'text';
+                    margin-top: 4vh;
+                    padding: 10%;
+                    h3{
+                        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                        color: $color-dark-primary;
+                    }
+                    p{
+                        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                        color: $color-grayscale-grey-p8;
+                        width: 80%;
+                    }
+                    button{
+                        width: 40%;
+                    }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;
+                    z-index: 10;
+                }
+            }
+    }
+
+    #bannerPayment{
+        height: auto;
+        margin: 0;
+        padding: 32px;
+        background-color: $color-dark-primary;
+        border-top: 1px solid $color-accent-primary-cian;
+        display: grid;
+        grid-template-areas: 'text logos';
+        .payment{
+            grid-area: logos;
+            width: 30vw;
+            margin: 0px;
+            justify-self: end;
+            img{
+                padding-right: 0px;
+                width: 10vw;
+            }
+            p{
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }
+        .bannerPaymentText{
+            grid-area: text;
+            width: 60vw;
+            margin: 0 auto;
+            padding-left: 4vh;
+            p{
+                font-weight: 600;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                margin-bottom: 8px;
+                font-size: 2rem;
+
+            }
+            .accentText{
+                color: $color-accent-primary-yellow;
+            }
+        }
+    
+    }
+    
+    #containerkitchen{
+        width: 98%;
+        display: grid;
+        padding-top: 8vh;
+        grid-template-areas: 
+        'imagen text';
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 100%;
+        margin-bottom: 8vh;
+        .imageKitchen{
+            grid-area: imagen;
+            width: 50vw;
+            margin: 0 auto;
+            padding-top: 4vh;
+            img{
+                width: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        }
+        .containerTextKitchen{
+            grid-area: text;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 4vh;
+            h3{
+                font-weight: 900;
+                font-size: 3vw;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-dark-primary;
+            span{
+                color: $color-indigo-A400;
+            }
+            }
+        .itemTextKitchen{
+            margin-top: 24px;
+            div{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                img{
+                    margin-right: 12px;
+                }
+                p{
+                    font-weight: 600;
+                    margin-bottom: 24px;
+                }
+            }
+
+        }
+    }
+    }
+
+    #containerOrdenes{
+        width: 80%;
+        margin-left: 10%;
+        display: grid;
+        padding-top: 8vh;
+        grid-template-areas: 
+        'imagen text';
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 100%;
+        margin-bottom: 20vh;
+        .imageOrdenes{
+            grid-area: imagen;
+            width: 50vw;
+            margin: 0 auto;
+            padding-top: 4vh;
+            img{
+                width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+        }
+         .containerTextOrdenes{
+            grid-area: text;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 4vh;
+            h3{
+                font-weight: 900;
+                font-size: 5vw;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-dark-primary;
+                span{
+                    color: $color-indigo-A400;
+                }
+            }
+            .itemTextOrdenes{
+                margin-top: 24px;
+                p{
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    color: $color-grayscale-grey-p8;
+                    span{
+                        background-color: $color-dark-primary;
+                        color: $color-white;
+                        display: inline-block;
+                        width: 8%;
+                        text-align: center;
+                        margin-right: 5%;
+                        border-radius: 2px;
+                        &:hover{
+                            background-color: $color-accent-primary-yellow;
+                            color: $color-dark-primary;
+                            cursor: pointer;
+                        }
+                    
+                    }
+                }
+                .button{
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+
+    #bannerPayment{
+        margin-bottom: 8vh;
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 20%;
+            h3{
+                font-weight: 900;
+                font-size: 3vw;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-accent-primary-yellow;
+
+            }
+            p{
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                font-weight: 400;
+                font-size: 1vw;
+            }
+        }
+    }
+
+
+    /*#containerPayment{
+    width: 80%;
+    margin-left: 10%;
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        height: auto;
+        .card {
+            flex: 0 0 30%;
+            width: 80vw;
+            scroll-snap-align: center;
+            margin: 10px auto;
+            text-align: center;
+            padding-bottom: 6vh;
+            border-radius: 8px;
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: all ease 0.5s;
+            .title{
+                background-color: $color-dark-primary;
+                color: $color-white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 4vh;
+                padding-left: 4vh;
+                border-bottom: 1px solid $color-accent-primary-cian;
+                p{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1.5vw;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                }
+            }
+            .description{
+                color: $color-dark-primary;
+                font-weight: 400;
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                padding: 4vh;
+                text-align:start ;
+                font-size: 18px;
+            }
+
+            .preice{
+                p{
+                    color: $color-indigo-A700;
+                    font-weight: 600;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    padding: 1vh 4vh;
+                    text-align:start ;
+                    font-size: 16px;
+                }
+                h2{
+                    color: $color-indigo-A700;
+                    font-size: 6.5vh;
+                    font-weight: 900;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    span{
+                        font-size: 4.5vh;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .functionalities{
+                padding-bottom: 4vh;
+                h3{
+                    color: $color-dark-primary;
+                    font-weight: 400;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    padding: 4vh 4vh 2vh 4vh;
+                    text-align:start ;
+                    font-size: 14px;
+
+                }
+                li{
+                    color: $color-dark-primary;
+                    font-weight: 400;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    text-align:start ;
+                    padding-left: 4vh;
+                    margin-bottom: 12px;
+                }
+                div{
+                    padding: 0vh 2vh;
+                }
+
+            }
+
+            .button{
+                position: absolute;
+                bottom: 0;
+                left: 20%;
+                margin-bottom: 30px;
+                
+                .buttonCardPayment{
+                    background-color: $color-indigo-A700;
+                    border: 2px solid $color-indigo-A700;
+                    transition: background-position 0.5s ease;
+                    a{
+                        color: $color-white;
+                    }
+                    &:hover{
+                        background-color: $color-accent-primary-yellow;
+                        border: 2px solid $color-accent-primary-yellow;
+                        background-position: 0 100%;
+                        a{
+                            color: $color-dark-primary;
+                        }
+                    }
+                 }
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+            
+          }
+
+
+
+        .card02{
+            background-image: url(../../assets/bg_card_payment.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-color: $color-dark-primary;
+            .description{
+                color: $color-white;
+            }
+
+            .preice{
+                p{
+                    color: $color-accent-primary-yellow;
+                }
+                h2{
+                    color: $color-white;
+                }
+            }
+            .functionalities{
+                h3{
+                    color: $color-white;
+
+                }
+                li{
+                    color: $color-white;
+                }
+            }
+
+            .buttonCardPayment{
+                background-color: $color-accent-primary-yellow;
+                border: 2px solid $color-accent-primary-yellow;
+                a{
+                    color: $color-dark-primary;
+                }
+            }
+        }
+      }
+      
+      
+    }*/
+
+    #containerPayment{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        .card {
+            max-width: 30%;
+            margin: 10px auto;
+            text-align: center;
+            padding-bottom: 6vh;
+            border-radius: 8px;
+            transition: all ease 0.5s;
+            position: relative;
+
+                .title{
+                    background-color: $color-dark-primary;
+                    color: $color-white;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-top: 4vh;
+                    padding-left: 4vh;
+                    border-bottom: 1px solid $color-accent-primary-cian;
+                    p{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 1.2vw;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    }
+                }
+                .description{
+                    color: $color-dark-primary;
+                    font-weight: 400;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    padding: 4vh;
+                    text-align:start ;
+                    font-size: 16px;
+                }
+    
+                .preice{
+                    p{
+                        color: $color-indigo-A700;
+                        font-weight: 600;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        padding: 1vh 4vh;
+                        text-align:start ;
+                        font-size: 16px;
+                    }
+                    h2{
+                        color: $color-indigo-A700;
+                        font-size: 6.5vh;
+                        font-weight: 900;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        span{
+                            font-size: 4.5vh;
+                            font-weight: 600;
+                        }
+                    }
+                }
+    
+                .functionalities{
+                    padding-bottom: 4vh;
+                    h3{
+                        color: $color-dark-primary;
+                        font-weight: 400;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        padding: 4vh 4vh 2vh 4vh;
+                        text-align:start ;
+                        font-size: 14px;
+    
+                    }
+
+                    div{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 90%;
+                        margin-left: 5%;
+                        img{
+                            margin-right: 12px;
+                        }
+                        p{
+                            font-weight: 600;
+                            margin-bottom: 24px;
+                            color: $color-dark-primary;
+                            font-weight: 400;
+                            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                            text-align:start ;
+
+                        }
+                    }
+    
+                }
+    
+                .button{
+                    .buttonCardPayment{
+                        width: 20vw;
+                        height: 48px;
+                        &:hover{
+                            background-color: $color-accent-primary-yellow;
+                            border: 2px solid $color-accent-primary-yellow;
+                            background-position: 0 100%;
+                            a{
+                                color: $color-dark-primary;
+                            }
+                        }
+                     }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    border: 2px solid $color-indigo-A700;
+                    border-radius: 8px;
+                }
+              }
+
+              .card02{
+                background-image: url(../../assets/bg_card_payment.png);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-color: $color-dark-primary;
+                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+                .description{
+                    color: $color-white;
+                }
+    
+                .preice{
+                    p{
+                        color: $color-accent-primary-yellow;
+                    }
+                    h2{
+                        color: $color-white;
+                    }
+                }
+                
+                .functionalities{
+                    h3{
+                        color: $color-white;
+    
+                    }
+                    .item{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 90%;
+                        margin-left: 8%;
+                        img{
+                            margin-right: 12px;
+                        }
+                        p{
+                            font-weight: 600;
+                            margin-bottom: 24px;
+                            color: $color-white;
+                            font-weight: 400;
+                            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                            text-align:start ;
+
+                        }
+                    }
+                    .SPO{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        div{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            width: 100%;
+                            margin-left: 3%;
+                            img{
+                                margin-right: 12px;
+                            }
+                            p{
+                                font-weight: 600;
+                                margin-bottom: 24px;
+                                color: $color-white;
+                                font-weight: 400;
+                                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                                text-align:start ;
+                            }
+                        }
+                        .subItem{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            flex-direction:column;
+                            width: 100%;
+                            margin-left: 8%;
+                            margin-top: 0px;
+                            div{
+                                p{
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                        
+                    }
+
+                }
+    
+                .buttonCardPayment{
+                    background-color: $color-accent-primary-yellow;
+                    border: 2px solid $color-accent-primary-yellow;
+                    a{
+                        color: $color-dark-primary;
+                    }
+                }
+                &:hover{
+                    border: 2px solid $color-accent-primary-yellow;
+                }
+            }
+          
+          
+
+    }
+
+    #containerFQA{
+        margin-top: 12vh;
+        width: 80%;
+        margin-left: 10%;
+        .text{
+            text-align: center;
+            margin-bottom: 4vh;
+            h3{
+                font-weight: 900;
+                font-size: 2.5vw;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-dark-primary;
+            }
+        }
+
+        #accordionFlushExample{
+            .accordion-item{
+                .accordion-header{
+                    button{
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        font-weight: 600;
+                    }
+                }
+                .accordion-body{
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                    span{
+                        a{
+                            color: $color-indigo-A700;
+                        }
+                    }
+                }
+
+                .accordion-button:not(.collapsed) {
+                    background-color: transparent;
+                    color: $color-indigo-A700;
+                }
+
+                                
+            }
+        }
+    }
+
+}

@@ -1,0 +1,2342 @@
+@charset "UTF-8";
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* INDIGO */
+/* BLUE */
+/* LIGHTBLUE */
+/* GREEN */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: justify;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+.buttonPrimary {
+  background-color: #3D5AFE;
+  padding: 4px 32px;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid #3D5AFE;
+  min-width: 120px;
+  cursor: pointer;
+  color: #f5f2f2;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.buttonPrimary a {
+  color: #f5f2f2;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.buttonSecondary {
+  background-color: #1E1B39;
+  padding: 4px 32px;
+  border: 2px solid #f5f2f2;
+  border-radius: 4px;
+  min-width: 120px;
+  cursor: pointer;
+}
+.buttonSecondary a {
+  color: #f5f2f2;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+.buttonSecondary a img {
+  color: #f5f2f2;
+  padding-right: 8px;
+}
+
+.buttonCardPayment {
+  padding: 4px 32px;
+  border: none;
+  border-radius: 4px;
+  align-self: center;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+}
+.buttonCardPayment a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 400px) {
+  .buttonPrimary {
+    width: 280px;
+  }
+  .buttonSecondary {
+    width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .buttonPrimary {
+    min-width: 280px;
+    height: 48px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .buttonPrimary a {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .buttonPrimary:hover {
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+    transform: scale(1.05);
+  }
+  .buttonPrimary:hover a {
+    color: #1E1B39;
+  }
+  .buttonSecondary {
+    min-width: 280px;
+    height: 48px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .buttonSecondary a {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .buttonSecondary:hover {
+    transform: scale(1.05);
+    border: 2px solid #FFCF56;
+  }
+  .buttonSecondary:hover a {
+    color: #FFCF56;
+  }
+  .buttonCardPayment {
+    padding: 4px 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .buttonCardPayment a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  }
+  .buttonCardPayment:hover {
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+    transform: scale(1.05);
+  }
+  .buttonCardPayment:hover a {
+    color: #1E1B39;
+  }
+}
+/*MOBILE FIRST*/
+body {
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0;
+}
+
+#containerHeader {
+  width: 100vw;
+  background: linear-gradient(45deg, #1E1B39, #8BFFFF);
+  background-image: url(../../assets/section.header.mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1E1B39;
+  height: auto;
+  padding-top: 8vh;
+}
+#containerHeader .slogan {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#containerHeader .slogan .textSlogan {
+  height: auto;
+}
+#containerHeader .slogan .textSlogan .titleSlogan {
+  font-weight: 900;
+  font-size: 14vw;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+  margin-bottom: -4%;
+  text-transform: uppercase;
+  text-align: end;
+}
+#containerHeader .slogan .textSlogan .accentText {
+  color: #FFCF56;
+}
+#containerHeader .slogan .imageSlogan {
+  align-self: center;
+  margin-top: 20px;
+}
+#containerHeader .slogan .imageSlogan img {
+  width: 80vw;
+}
+#containerHeader .textHeader {
+  width: 80vw;
+  margin: 32px auto 40px;
+}
+#containerHeader .textHeader p {
+  color: #f5f2f2;
+  font-weight: 400;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#containerHeader .textHeader .buttonHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+#bannerCountry {
+  height: auto;
+  margin: 0;
+  width: 100vw;
+  padding: 16px;
+  margin-top: 4vh;
+  background-color: #1E1B39;
+  border-top: 1px solid #8BFFFF;
+}
+#bannerCountry .flags {
+  width: 80vw;
+  margin: 16px auto 12px;
+}
+#bannerCountry .flags img {
+  padding-right: 12px;
+}
+#bannerCountry .bannerCountryText {
+  width: 80vw;
+  margin: 0 auto;
+}
+#bannerCountry .bannerCountryText p {
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+  margin-bottom: 8px;
+}
+#bannerCountry .bannerCountryText .accentText {
+  color: #FFCF56;
+}
+
+#containerProducts {
+  width: 100vw;
+}
+#containerProducts .titleProduct {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 4vh;
+}
+#containerProducts .titleProduct h2 {
+  font-weight: 900;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+#containerProducts .titleProduct p {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #525252;
+  font-size: 1.2rem;
+}
+#containerProducts .product {
+  /*background-image: url(../../assets/bg_card_product.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: $color-card; */
+  width: 80vw;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  /*box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;*/
+}
+#containerProducts .product .imageCard {
+  margin-top: 4vh;
+}
+#containerProducts .product .imageCard img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#containerProducts .product .textProduct {
+  margin-top: 4vh;
+  padding: 10%;
+}
+#containerProducts .product .textProduct h3 {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #1E1B39;
+  font-size: 1.5rem;
+}
+#containerProducts .product .textProduct p {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #525252;
+  font-size: 1.2rem;
+}
+#containerProducts .product .textProduct button {
+  width: 100%;
+  font-size: 1.2rem;
+  height: 48px;
+}
+
+#bannerPayment {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 32px;
+  background-color: #1E1B39;
+  border-top: 1px solid #8BFFFF;
+}
+#bannerPayment .payment {
+  width: 80vw;
+  margin: 20px auto 12px;
+}
+#bannerPayment .payment img {
+  padding-right: 12px;
+  width: 30vw;
+}
+#bannerPayment .payment p {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+}
+#bannerPayment .bannerPaymentText {
+  width: 80vw;
+  margin: 0 auto;
+}
+#bannerPayment .bannerPaymentText p {
+  font-weight: 400;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+  margin-bottom: 8px;
+}
+#bannerPayment .bannerPaymentText .accentText {
+  color: #FFCF56;
+}
+
+#containerkitchen {
+  width: 100vw;
+  display: grid;
+  padding-top: 0vh;
+  grid-template-areas: "text" "image";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+}
+#containerkitchen .imageKitchen {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4vh;
+  grid-area: image;
+}
+#containerkitchen .imageKitchen img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#containerkitchen .containerTextKitchen {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4vh;
+  grid-area: text;
+}
+#containerkitchen .containerTextKitchen h3 {
+  font-weight: 900;
+  font-size: 6vw;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #1E1B39;
+}
+#containerkitchen .containerTextKitchen h3 span {
+  color: #3D5AFE;
+}
+#containerkitchen .containerTextKitchen .itemTextKitchen {
+  margin-top: 24px;
+}
+#containerkitchen .containerTextKitchen .itemTextKitchen div {
+  display: flex;
+  flex-direction: row;
+}
+#containerkitchen .containerTextKitchen .itemTextKitchen div img {
+  width: 24px;
+}
+#containerkitchen .containerTextKitchen .itemTextKitchen div p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #525252;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+#containerOrdenes {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "text" "image";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 0;
+}
+#containerOrdenes .imageOrdenes {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 4vh;
+  grid-area: image;
+}
+#containerOrdenes .imageOrdenes img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#containerOrdenes .containerTextOrdenes {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 8vh;
+  grid-area: text;
+}
+#containerOrdenes .containerTextOrdenes h3 {
+  font-weight: 900;
+  font-size: 6vw;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #1E1B39;
+}
+#containerOrdenes .containerTextOrdenes h3 span {
+  color: #3D5AFE;
+}
+#containerOrdenes .containerTextOrdenes .itemTextOrdenes {
+  margin-top: 24px;
+}
+#containerOrdenes .containerTextOrdenes .itemTextOrdenes p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #525252;
+}
+#containerOrdenes .containerTextOrdenes .itemTextOrdenes p span {
+  background-color: #1E1B39;
+  color: #f5f2f2;
+  display: inline-block;
+  width: 8%;
+  text-align: center;
+  margin-right: 5%;
+  border-radius: 2px;
+}
+
+#bannerPayment {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+#bannerPayment .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0%;
+}
+#bannerPayment .text h3 {
+  font-weight: 900;
+  font-size: 9vw;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #FFCF56;
+}
+#bannerPayment .text p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+  font-weight: 400;
+  font-size: 4vw;
+}
+
+#containerPayment {
+  width: 100vw;
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+}
+#containerPayment .card {
+  max-width: 90vw;
+  margin: 10px auto;
+  text-align: center;
+  padding-bottom: 6vh;
+  border-radius: 8px;
+  transition: all ease 0.5s;
+  position: relative;
+}
+#containerPayment .card .title {
+  background-color: #1E1B39;
+  color: #f5f2f2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4vh;
+  padding-left: 4vh;
+  border-bottom: 1px solid #8BFFFF;
+  border-radius: 8px 8px 0px 0px;
+}
+#containerPayment .card .title p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4vw;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+#containerPayment .card .description {
+  color: #1E1B39;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 4vh;
+  text-align: start;
+  font-size: 16px;
+}
+#containerPayment .card .preice p {
+  color: #304FFF;
+  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 1vh 4vh;
+  text-align: start;
+  font-size: 16px;
+}
+#containerPayment .card .preice h2 {
+  color: #304FFF;
+  font-size: 6.5vh;
+  font-weight: 900;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+#containerPayment .card .preice h2 span {
+  font-size: 4.5vh;
+  font-weight: 600;
+}
+#containerPayment .card .functionalities {
+  padding-bottom: 8vh;
+}
+#containerPayment .card .functionalities h3 {
+  color: #1E1B39;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding: 4vh 4vh 2vh 4vh;
+  text-align: start;
+  font-size: 14px;
+}
+#containerPayment .card .functionalities div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  margin-left: 5%;
+}
+#containerPayment .card .functionalities div img {
+  margin-right: 12px;
+}
+#containerPayment .card .functionalities div p {
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1E1B39;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: start;
+}
+#containerPayment .card .button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#containerPayment .card .button .buttonCardPayment {
+  background-color: #304FFF;
+  border: 2px solid #304FFF;
+  transition: background-position 0.5s ease;
+  width: 70vw;
+  height: 48px;
+}
+#containerPayment .card .button .buttonCardPayment a {
+  color: #f5f2f2;
+  font-size: 1.2rem;
+}
+#containerPayment .card .button .buttonCardPayment:hover {
+  background-color: #FFCF56;
+  border: 2px solid #FFCF56;
+  background-position: 0 100%;
+}
+#containerPayment .card .button .buttonCardPayment:hover a {
+  color: #1E1B39;
+}
+#containerPayment .card02 {
+  max-width: 90vw;
+  margin: 10px auto;
+  text-align: center;
+  padding-bottom: 6vh;
+  border-radius: 8px;
+  transition: all ease 0.5s;
+  position: relative;
+  background-image: url(../../assets/bg_card_payment.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1E1B39;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+#containerPayment .card02 .description {
+  color: #f5f2f2;
+}
+#containerPayment .card02 .preice p {
+  color: #FFCF56;
+}
+#containerPayment .card02 .preice h2 {
+  color: #f5f2f2;
+}
+#containerPayment .card02 .functionalities h3 {
+  color: #f5f2f2;
+}
+#containerPayment .card02 .functionalities .item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  margin-left: 8%;
+}
+#containerPayment .card02 .functionalities .item img {
+  margin-right: 12px;
+}
+#containerPayment .card02 .functionalities .item p {
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #f5f2f2;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: start;
+}
+#containerPayment .card02 .functionalities .SPO {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#containerPayment .card02 .functionalities .SPO div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 3%;
+}
+#containerPayment .card02 .functionalities .SPO div img {
+  margin-right: 12px;
+}
+#containerPayment .card02 .functionalities .SPO div p {
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #f5f2f2;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: start;
+}
+#containerPayment .card02 .functionalities .SPO .subItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 8%;
+  margin-top: 0px;
+}
+#containerPayment .card02 .functionalities .SPO .subItem div p {
+  color: #f5f2f2;
+}
+#containerPayment .card02 .button .buttonCardPayment {
+  width: 65vw;
+  background-color: #FFCF56;
+  border: 2px solid #FFCF56;
+}
+#containerPayment .card02 .button .buttonCardPayment a {
+  color: #1E1B39;
+}
+
+#containerFQA {
+  margin-top: 12vh;
+  width: 100%;
+  margin-left: 10%;
+}
+#containerFQA .text {
+  text-align: center;
+  margin-bottom: 4vh;
+}
+#containerFQA .text h3 {
+  font-weight: 900;
+  font-size: 5.5vw;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #1E1B39;
+}
+#containerFQA #accordionFlushExample .accordion-item .accordion-header button {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+#containerFQA #accordionFlushExample .accordion-item .accordion-body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+#containerFQA #accordionFlushExample .accordion-item .accordion-body span a {
+  color: #304FFF;
+}
+#containerFQA #accordionFlushExample .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #304FFF;
+}
+
+/*LAPTOP*/
+@media (min-width: 1200px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  #containerHeader {
+    background: linear-gradient(45deg, #1E1B39, #8BFFFF);
+    background-image: url(../../assets/section.header.mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1E1B39;
+    height: auto;
+    padding-top: 0vh;
+  }
+  #containerHeader .slogan {
+    margin: 15vh auto 0;
+    display: grid;
+    grid-template-areas: "text image";
+  }
+  #containerHeader .slogan .textSlogan {
+    grid-area: "text";
+    height: auto;
+  }
+  #containerHeader .slogan .textSlogan .titleSlogan {
+    font-weight: 900;
+    font-size: 8vw;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    text-transform: uppercase;
+    text-align: end;
+  }
+  #containerHeader .slogan .textSlogan .accentText {
+    color: #FFCF56;
+  }
+  #containerHeader .slogan .imageSlogan {
+    grid-area: "text";
+    align-self: center;
+    margin-top: 20px;
+  }
+  #containerHeader .slogan .imageSlogan img {
+    width: 50vw;
+  }
+  #containerHeader .textHeader {
+    width: 80%;
+    margin: 32px auto 40px;
+  }
+  #containerHeader .textHeader .text {
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+  }
+  #containerHeader .textHeader .text p {
+    color: #f5f2f2;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5vh;
+    margin-top: -20px;
+  }
+  #containerHeader .textHeader .buttonHeader {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+  }
+  #containerHeader .textHeader .btnVideo:hover {
+    color: #1E1B39;
+  }
+  .modal-dialog {
+    margin-left: 20%;
+  }
+  .modal-dialog .modal-content {
+    background-color: rgba(30, 27, 57, 0.0666666667);
+    backdrop-filter: blur(12px);
+    border: none;
+    width: 60vw !important;
+  }
+  .modal-dialog .modal-content .modal-header .btn-close {
+    color: #FFCF56 !important;
+  }
+  .modal-dialog .modal-body video {
+    width: 100%;
+  }
+  #bannerCountry {
+    height: auto;
+    margin: 0;
+    padding: 32px;
+    background-color: #1E1B39;
+    border-top: 1px solid #8BFFFF;
+    display: grid;
+    grid-template-areas: "text flag";
+    justify-content: space-between;
+  }
+  #bannerCountry .flags {
+    grid-area: flag;
+    width: 90vw;
+    margin: 20px auto 12px;
+  }
+  #bannerCountry .flags img {
+    padding-right: 12px;
+  }
+  #bannerCountry .bannerCountryText {
+    grid-area: text;
+    width: 80vw;
+    margin: 0 auto;
+    padding-left: 8%;
+  }
+  #bannerCountry .bannerCountryText p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    margin-bottom: 8px;
+  }
+  #bannerCountry .bannerCountryText .accentText {
+    color: #FFCF56;
+  }
+  #containerProducts {
+    width: 100vw;
+  }
+  #containerProducts .titleProduct {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 8vh;
+  }
+  #containerProducts .titleProduct h2 {
+    font-weight: 900;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+  }
+  #containerProducts .titleProduct p {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #525252;
+    font-size: 1.2rem;
+  }
+  #containerProducts .product {
+    background-color: transparent;
+    width: 80vw;
+    height: auto;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas: "image text";
+    border-radius: 4px;
+    margin-bottom: 40px;
+    /*box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;*/
+    transition: all 0.5s ease;
+  }
+  #containerProducts .product .imageCard {
+    grid-area: "image";
+    margin-top: 4vh;
+  }
+  #containerProducts .product .imageCard img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #containerProducts .product .textProduct {
+    grid-area: "text";
+    margin-top: 4vh;
+    padding: 10%;
+  }
+  #containerProducts .product .textProduct h3 {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #1E1B39;
+  }
+  #containerProducts .product .textProduct p {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #525252;
+    width: 80%;
+  }
+  #containerProducts .product .textProduct button {
+    width: 40%;
+  }
+  #containerProducts .product:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  #bannerPayment {
+    height: auto;
+    margin: 0;
+    padding: 32px;
+    background-color: #1E1B39;
+    border-top: 1px solid #8BFFFF;
+    display: grid;
+    grid-template-areas: "text logos";
+  }
+  #bannerPayment .payment {
+    grid-area: logos;
+    width: 30vw;
+    margin: 0px;
+    justify-self: end;
+  }
+  #bannerPayment .payment img {
+    padding-right: 0px;
+    width: 10vw;
+  }
+  #bannerPayment .payment p {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  #bannerPayment .bannerPaymentText {
+    grid-area: text;
+    width: 60vw;
+    margin: 0 auto;
+    padding-left: 4vh;
+  }
+  #bannerPayment .bannerPaymentText p {
+    font-weight: 600;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    margin-bottom: 8px;
+    font-size: 2rem;
+  }
+  #bannerPayment .bannerPaymentText .accentText {
+    color: #FFCF56;
+  }
+  #containerkitchen {
+    width: 98%;
+    display: grid;
+    padding-top: 8vh;
+    grid-template-areas: "imagen text";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 100%;
+    margin-bottom: 8vh;
+  }
+  #containerkitchen .imageKitchen {
+    grid-area: imagen;
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 4vh;
+  }
+  #containerkitchen .imageKitchen img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #containerkitchen .containerTextKitchen {
+    grid-area: text;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4vh;
+  }
+  #containerkitchen .containerTextKitchen h3 {
+    font-weight: 900;
+    font-size: 3vw;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #1E1B39;
+  }
+  #containerkitchen .containerTextKitchen h3 span {
+    color: #3D5AFE;
+  }
+  #containerkitchen .containerTextKitchen .itemTextKitchen {
+    margin-top: 24px;
+  }
+  #containerkitchen .containerTextKitchen .itemTextKitchen div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #containerkitchen .containerTextKitchen .itemTextKitchen div img {
+    margin-right: 12px;
+  }
+  #containerkitchen .containerTextKitchen .itemTextKitchen div p {
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  #containerOrdenes {
+    width: 80%;
+    margin-left: 10%;
+    display: grid;
+    padding-top: 8vh;
+    grid-template-areas: "imagen text";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 100%;
+    margin-bottom: 20vh;
+  }
+  #containerOrdenes .imageOrdenes {
+    grid-area: imagen;
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 4vh;
+  }
+  #containerOrdenes .imageOrdenes img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #containerOrdenes .containerTextOrdenes {
+    grid-area: text;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 4vh;
+  }
+  #containerOrdenes .containerTextOrdenes h3 {
+    font-weight: 900;
+    font-size: 5vw;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #1E1B39;
+  }
+  #containerOrdenes .containerTextOrdenes h3 span {
+    color: #3D5AFE;
+  }
+  #containerOrdenes .containerTextOrdenes .itemTextOrdenes {
+    margin-top: 24px;
+  }
+  #containerOrdenes .containerTextOrdenes .itemTextOrdenes p {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #525252;
+  }
+  #containerOrdenes .containerTextOrdenes .itemTextOrdenes p span {
+    background-color: #1E1B39;
+    color: #f5f2f2;
+    display: inline-block;
+    width: 8%;
+    text-align: center;
+    margin-right: 5%;
+    border-radius: 2px;
+  }
+  #containerOrdenes .containerTextOrdenes .itemTextOrdenes p span:hover {
+    background-color: #FFCF56;
+    color: #1E1B39;
+    cursor: pointer;
+  }
+  #containerOrdenes .containerTextOrdenes .itemTextOrdenes .button {
+    margin-top: 5vh;
+  }
+  #bannerPayment {
+    margin-bottom: 8vh;
+  }
+  #bannerPayment .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 20%;
+  }
+  #bannerPayment .text h3 {
+    font-weight: 900;
+    font-size: 3vw;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #FFCF56;
+  }
+  #bannerPayment .text p {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    font-weight: 400;
+    font-size: 1vw;
+  }
+  /*#containerPayment{
+  width: 80%;
+  margin-left: 10%;
+  .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      width: 100%;
+      height: auto;
+      .card {
+          flex: 0 0 30%;
+          width: 80vw;
+          scroll-snap-align: center;
+          margin: 10px auto;
+          text-align: center;
+          padding-bottom: 6vh;
+          border-radius: 8px;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+          position: relative;
+          transition: all ease 0.5s;
+          .title{
+              background-color: $color-dark-primary;
+              color: $color-white;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-top: 4vh;
+              padding-left: 4vh;
+              border-bottom: 1px solid $color-accent-primary-cian;
+              p{
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  font-size: 1.5vw;
+                  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+              }
+          }
+          .description{
+              color: $color-dark-primary;
+              font-weight: 400;
+              font-family: 'Roboto', Arial, Helvetica, sans-serif;
+              padding: 4vh;
+              text-align:start ;
+              font-size: 18px;
+          }
+
+          .preice{
+              p{
+                  color: $color-indigo-A700;
+                  font-weight: 600;
+                  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                  padding: 1vh 4vh;
+                  text-align:start ;
+                  font-size: 16px;
+              }
+              h2{
+                  color: $color-indigo-A700;
+                  font-size: 6.5vh;
+                  font-weight: 900;
+                  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                  span{
+                      font-size: 4.5vh;
+                      font-weight: 600;
+                  }
+              }
+          }
+
+          .functionalities{
+              padding-bottom: 4vh;
+              h3{
+                  color: $color-dark-primary;
+                  font-weight: 400;
+                  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                  padding: 4vh 4vh 2vh 4vh;
+                  text-align:start ;
+                  font-size: 14px;
+
+              }
+              li{
+                  color: $color-dark-primary;
+                  font-weight: 400;
+                  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                  text-align:start ;
+                  padding-left: 4vh;
+                  margin-bottom: 12px;
+              }
+              div{
+                  padding: 0vh 2vh;
+              }
+
+          }
+
+          .button{
+              position: absolute;
+              bottom: 0;
+              left: 20%;
+              margin-bottom: 30px;
+
+              .buttonCardPayment{
+                  background-color: $color-indigo-A700;
+                  border: 2px solid $color-indigo-A700;
+                  transition: background-position 0.5s ease;
+                  a{
+                      color: $color-white;
+                  }
+                  &:hover{
+                      background-color: $color-accent-primary-yellow;
+                      border: 2px solid $color-accent-primary-yellow;
+                      background-position: 0 100%;
+                      a{
+                          color: $color-dark-primary;
+                      }
+                  }
+               }
+          }
+          &:hover{
+              transform: scale(1.2);
+          }
+
+        }
+
+
+
+      .card02{
+          background-image: url(../../assets/bg_card_payment.png);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-color: $color-dark-primary;
+          .description{
+              color: $color-white;
+          }
+
+          .preice{
+              p{
+                  color: $color-accent-primary-yellow;
+              }
+              h2{
+                  color: $color-white;
+              }
+          }
+          .functionalities{
+              h3{
+                  color: $color-white;
+
+              }
+              li{
+                  color: $color-white;
+              }
+          }
+
+          .buttonCardPayment{
+              background-color: $color-accent-primary-yellow;
+              border: 2px solid $color-accent-primary-yellow;
+              a{
+                  color: $color-dark-primary;
+              }
+          }
+      }
+    }
+
+
+  }*/
+  #containerPayment {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+  #containerPayment .card {
+    max-width: 30%;
+    margin: 10px auto;
+    text-align: center;
+    padding-bottom: 6vh;
+    border-radius: 8px;
+    transition: all ease 0.5s;
+    position: relative;
+  }
+  #containerPayment .card .title {
+    background-color: #1E1B39;
+    color: #f5f2f2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4vh;
+    padding-left: 4vh;
+    border-bottom: 1px solid #8BFFFF;
+  }
+  #containerPayment .card .title p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2vw;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+  #containerPayment .card .description {
+    color: #1E1B39;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 4vh;
+    text-align: start;
+    font-size: 16px;
+  }
+  #containerPayment .card .preice p {
+    color: #304FFF;
+    font-weight: 600;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 1vh 4vh;
+    text-align: start;
+    font-size: 16px;
+  }
+  #containerPayment .card .preice h2 {
+    color: #304FFF;
+    font-size: 6.5vh;
+    font-weight: 900;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+  #containerPayment .card .preice h2 span {
+    font-size: 4.5vh;
+    font-weight: 600;
+  }
+  #containerPayment .card .functionalities {
+    padding-bottom: 4vh;
+  }
+  #containerPayment .card .functionalities h3 {
+    color: #1E1B39;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    padding: 4vh 4vh 2vh 4vh;
+    text-align: start;
+    font-size: 14px;
+  }
+  #containerPayment .card .functionalities div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    margin-left: 5%;
+  }
+  #containerPayment .card .functionalities div img {
+    margin-right: 12px;
+  }
+  #containerPayment .card .functionalities div p {
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1E1B39;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: start;
+  }
+  #containerPayment .card .button .buttonCardPayment {
+    width: 20vw;
+    height: 48px;
+  }
+  #containerPayment .card .button .buttonCardPayment:hover {
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+    background-position: 0 100%;
+  }
+  #containerPayment .card .button .buttonCardPayment:hover a {
+    color: #1E1B39;
+  }
+  #containerPayment .card:hover {
+    transform: scale(1.1);
+    border: 2px solid #304FFF;
+    border-radius: 8px;
+  }
+  #containerPayment .card02 {
+    background-image: url(../../assets/bg_card_payment.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1E1B39;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+  #containerPayment .card02 .description {
+    color: #f5f2f2;
+  }
+  #containerPayment .card02 .preice p {
+    color: #FFCF56;
+  }
+  #containerPayment .card02 .preice h2 {
+    color: #f5f2f2;
+  }
+  #containerPayment .card02 .functionalities h3 {
+    color: #f5f2f2;
+  }
+  #containerPayment .card02 .functionalities .item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    margin-left: 8%;
+  }
+  #containerPayment .card02 .functionalities .item img {
+    margin-right: 12px;
+  }
+  #containerPayment .card02 .functionalities .item p {
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #f5f2f2;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: start;
+  }
+  #containerPayment .card02 .functionalities .SPO {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  #containerPayment .card02 .functionalities .SPO div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 3%;
+  }
+  #containerPayment .card02 .functionalities .SPO div img {
+    margin-right: 12px;
+  }
+  #containerPayment .card02 .functionalities .SPO div p {
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #f5f2f2;
+    font-weight: 400;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: start;
+  }
+  #containerPayment .card02 .functionalities .SPO .subItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 8%;
+    margin-top: 0px;
+  }
+  #containerPayment .card02 .functionalities .SPO .subItem div p {
+    color: #f5f2f2;
+  }
+  #containerPayment .card02 .buttonCardPayment {
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+  }
+  #containerPayment .card02 .buttonCardPayment a {
+    color: #1E1B39;
+  }
+  #containerPayment .card02:hover {
+    border: 2px solid #FFCF56;
+  }
+  #containerFQA {
+    margin-top: 12vh;
+    width: 80%;
+    margin-left: 10%;
+  }
+  #containerFQA .text {
+    text-align: center;
+    margin-bottom: 4vh;
+  }
+  #containerFQA .text h3 {
+    font-weight: 900;
+    font-size: 2.5vw;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #1E1B39;
+  }
+  #containerFQA #accordionFlushExample .accordion-item .accordion-header button {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  #containerFQA #accordionFlushExample .accordion-item .accordion-body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  #containerFQA #accordionFlushExample .accordion-item .accordion-body span a {
+    color: #304FFF;
+  }
+  #containerFQA #accordionFlushExample .accordion-item .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #304FFF;
+  }
+}
+#form {
+  display: grid;
+  grid-template-areas: "image" "form";
+  width: 100vw;
+  background-image: url(../../assets/section.header.mobile.png);
+}
+#form .containerImage {
+  grid-area: image;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 8vh;
+}
+#form .containerImage .text {
+  color: #f5f2f2;
+}
+#form .containerImage .text h3 {
+  font-size: 12vw;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+#form .containerImage .text h3 span {
+  color: #FFCF56;
+}
+#form .containerImage img {
+  display: none;
+}
+#form .containerForm {
+  grid-area: form;
+}
+#form .containerForm .form {
+  width: 80vw;
+  margin-left: 10vw;
+}
+#form .containerForm .form .form-label {
+  color: #f5f2f2;
+}
+#form .containerForm .form .flag span {
+  background-color: #f5f2f2;
+}
+#form .containerForm .form .flag span img {
+  width: 20px;
+  margin-right: 8px;
+}
+#form .containerForm .form .input {
+  margin-bottom: 24px;
+}
+#form .containerForm .check {
+  width: 80vw;
+  margin-left: 10vw;
+  color: #f5f2f2;
+  margin-bottom: 6vh;
+  margin-top: 4ch;
+}
+#form .containerForm .check #flexCheckDefault {
+  color: #FFCF56;
+}
+#form .containerForm .btn {
+  width: 100vw;
+  margin-bottom: 8vh;
+}
+#form .containerForm .btn button {
+  background-color: #FFCF56;
+  color: #1E1B39;
+  height: 40px;
+  width: 80vw;
+  border: 2px solid #FFCF56;
+}
+
+@media (min-width: 1200px) {
+  #form {
+    display: grid;
+    grid-template-areas: "image form";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    background-image: url(../../assets/section.header.mobile.png);
+  }
+  #form .containerImage {
+    grid-area: image;
+    width: 50vw;
+    margin-left: 0vw;
+    padding: 4vw 5vw;
+    margin-top: 0vh;
+  }
+  #form .containerImage .text {
+    color: #f5f2f2;
+  }
+  #form .containerImage .text h3 {
+    font-size: 5vw;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+  }
+  #form .containerImage .text h3 span {
+    color: #FFCF56;
+  }
+  #form .containerImage img {
+    display: inline-block;
+    width: 100%;
+  }
+  #form .containerForm {
+    grid-area: form;
+    margin-left: 0vw;
+    padding: 4vw 5vw;
+  }
+  #form .containerForm .form {
+    margin-left: 0;
+    width: 40vw;
+    background-color: #1E1B39;
+    padding: 4vh 4vw;
+    border-radius: 8px;
+  }
+  #form .containerForm .form .form-label {
+    color: #f5f2f2;
+  }
+  #form .containerForm .form .flag span {
+    background-color: #f5f2f2;
+  }
+  #form .containerForm .form .flag span img {
+    width: 20px;
+    margin-right: 8px;
+  }
+  #form .containerForm .form .input {
+    margin-bottom: 24px;
+  }
+  #form .containerForm .check {
+    width: 40vw;
+    margin-left: 0vw;
+    color: #f5f2f2;
+    margin-bottom: 6vh;
+    margin-top: 4vh;
+  }
+  #form .containerForm .btn {
+    width: 40vw;
+    margin-bottom: 8vh;
+    margin-left: 0;
+  }
+  #form .containerForm .btn button {
+    background-color: #FFCF56;
+    color: #1E1B39;
+    height: 48px;
+    width: 100%;
+    border: 2px solid #FFCF56;
+  }
+}
+#containerFooter {
+  width: 100vw;
+  margin-top: 8vh;
+  background-image: url(../../assets/footer_container.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1E1B39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#containerFooter h3 {
+  color: #f5f2f2;
+  padding: 6vh 4vh 2vh 4vh;
+  font-weight: 900;
+  font-size: 6vw;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#containerFooter .subtitle {
+  color: #f5f2f2;
+  font-weight: 400;
+  font-size: 5vw;
+  padding: 0vh 4vh 2vh 4vh;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#containerFooter button {
+  background-color: #FFCF56;
+  padding: 4px 32px;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid #FFCF56;
+  min-width: 280px;
+  cursor: pointer;
+}
+#containerFooter button a {
+  color: #1E1B39;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+#containerFooter button a img {
+  color: #f5f2f2;
+  padding-left: 8px;
+  width: 24px;
+}
+#containerFooter .imageFooter {
+  margin-top: 4vh;
+  width: 100%;
+}
+#containerFooter .app {
+  margin-top: 4vh;
+}
+#containerFooter .copyRight {
+  color: #f5f2f2;
+  padding: 6vh 4vh 2vh 4vh;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 1200px) {
+  #containerFooter {
+    margin-top: 18vh;
+    background-image: url(../../assets/footer_container.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1E1B39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #containerFooter h3 {
+    color: #f5f2f2;
+    padding: 20vh 4vh 2vh 4vh;
+    font-weight: 900;
+    font-size: 3vw;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #containerFooter .subtitle {
+    color: #f5f2f2;
+    font-weight: 400;
+    font-size: 2.5vw;
+    padding: 0vh 4vh 2vh 4vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #containerFooter button {
+    background-color: #FFCF56;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid #FFCF56;
+    width: 380px;
+    cursor: pointer;
+  }
+  #containerFooter button a {
+    color: #1E1B39;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  }
+  #containerFooter button a img {
+    padding-left: 8px;
+    width: 24px;
+  }
+  #containerFooter button:hover {
+    background-color: transparent;
+  }
+  #containerFooter button:hover a {
+    color: #FFCF56;
+  }
+  #containerFooter .imageFooter {
+    margin-top: 4vh;
+    width: 80%;
+  }
+  #containerFooter .app {
+    margin-top: 4vh;
+  }
+  #containerFooter .copyRight {
+    color: #f5f2f2;
+    padding: 6vh 4vh 2vh 4vh;
+    font-size: 1rem;
+  }
+}
+body {
+  margin: 0;
+}
+
+#nav {
+  position: relative;
+  top: 0;
+  background-color: #1E1B39 !important;
+  box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+  border-bottom: 0.5px solid #8BFFFF !important;
+  z-index: 10;
+  height: 64px;
+  margin-top: 0;
+}
+#nav .navbar-brand {
+  width: 10%;
+  margin-left: 16px;
+}
+#nav .navbar-brand img {
+  width: 100%;
+}
+#nav .navbar-collapse .navbar-nav {
+  width: 100%;
+}
+#nav .navbar-collapse .navbar-nav .nav-item {
+  margin-left: 32px;
+}
+#nav .navbar-collapse form .btn {
+  width: 300px;
+  margin-left: 40%;
+  background-color: #FFCF56;
+  border: 2px solid #FFCF56;
+  color: #1E1B39;
+  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  transition: all ease 0.5s;
+}
+#nav .navbar-collapse form .btn a {
+  color: #1E1B39;
+  font-weight: 600;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+#nav .active {
+  color: #FFCF56 !important;
+  font-weight: 600;
+}
+#nav .nav-link {
+  color: #f5f2f2;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+#nav .nav-link:hover {
+  color: #FFCF56;
+  font-weight: 600;
+}
+#nav .navbar-toggler {
+  background-color: #FFCF56;
+  border: 1px solid #FFCF56;
+}
+
+@media (max-width: 991px) {
+  #navbarNav {
+    background-color: #1E1B39;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 2vh;
+    border-radius: 8px;
+    padding-top: 4vh;
+  }
+  #navbarNav form:not(.collapsed) {
+    margin-bottom: 4vh;
+  }
+  #navbarNav form:not(.collapsed) .btn {
+    width: 300px;
+    margin: 0 !important;
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+    color: #1E1B39;
+    font-weight: 600;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: all ease 0.5s;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #nav .navbar-brand {
+    width: 6%;
+    margin-left: 16px;
+  }
+  #nav .navbar-brand img {
+    width: 100%;
+  }
+  #nav .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+  #nav .navbar-collapse .navbar-nav .nav-item {
+    margin-left: 32px;
+  }
+  #nav .navbar-collapse form .btn {
+    width: 300px;
+    margin-left: 30%;
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+    color: #1E1B39;
+    font-weight: 600;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: all ease 0.5s;
+  }
+  #nav .navbar-collapse form .btn:hover {
+    background-color: transparent;
+  }
+  #nav .navbar-collapse form .btn:hover a {
+    color: #FFCF56;
+  }
+  #nav .active {
+    color: #FFCF56 !important;
+    font-weight: 600;
+  }
+  #nav .nav-link {
+    color: #f5f2f2;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+  #nav .nav-link:hover {
+    color: #FFCF56;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  #nav .navbar-brand {
+    width: 6%;
+    margin-left: 16px;
+  }
+  #nav .navbar-brand img {
+    width: 100%;
+  }
+  #nav .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+  #nav .navbar-collapse .navbar-nav .nav-item {
+    margin-left: 32px;
+  }
+  #nav .navbar-collapse form .btn {
+    width: 300px;
+    margin-left: 40%;
+    background-color: #FFCF56;
+    border: 2px solid #FFCF56;
+    color: #1E1B39;
+    font-weight: 600;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    transition: all ease 0.5s;
+  }
+  #nav .navbar-collapse form .btn:hover {
+    background-color: transparent;
+  }
+  #nav .navbar-collapse form .btn:hover a {
+    color: #FFCF56;
+  }
+  #nav .active {
+    color: #FFCF56 !important;
+    font-weight: 600;
+  }
+  #nav .nav-link {
+    color: #f5f2f2;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+  #nav .nav-link:hover {
+    color: #FFCF56;
+    font-weight: 600;
+  }
+}
+main {
+  margin: 0;
+}
+
+#ERPHeader {
+  background-image: url(../../assets/bg_erp_header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-areas: "title" "images";
+}
+#ERPHeader .title {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 12vh;
+  grid-area: title;
+}
+#ERPHeader .title h3 {
+  color: #1E1B39;
+  font-size: 10vw;
+  font-weight: 900;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#ERPHeader .title p {
+  color: #525252;
+  font-size: 5vw;
+  font-weight: 400;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#ERPHeader .images {
+  grid-area: images;
+  margin-top: 4vh;
+}
+#ERPHeader .images .img {
+  margin-left: 5vw;
+}
+#ERPHeader .images .img img {
+  width: 100%;
+}
+#ERPHeader .images .text {
+  margin-top: 4vh;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-bottom: 8vh;
+}
+#ERPHeader .images .text p {
+  color: #525252;
+  font-size: 5vw;
+  font-weight: 400;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#ERPHeader .images .text .buttonHeader {
+  display: none;
+}
+
+#bannerPaymentERP {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 32px;
+  background-color: #1E1B39;
+  border-top: 3px solid #8BFFFF;
+  background-image: url(../../assets/banner_pay_ERP.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 8vh;
+}
+#bannerPaymentERP .spoERPPaymentText {
+  width: 80vw;
+  margin: 20px auto 12px;
+}
+#bannerPaymentERP .spoERPPaymentText p {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+  font-size: 5.5vw;
+}
+#bannerPaymentERP .spoERPPaymentText .accentSpoERP {
+  font-size: 5vw;
+  color: #FFCF56;
+}
+
+#containerERP {
+  width: 100vw;
+}
+#containerERP .titleProduct {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 6vh;
+  padding-bottom: 3vh;
+}
+#containerERP .titleProduct h2 {
+  font-weight: 900;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+}
+#containerERP .titleProduct h2 span {
+  color: #304FFF;
+}
+#containerERP .titleProduct p {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #525252;
+  font-size: 2rem;
+}
+#containerERP .product {
+  width: 80vw;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+#containerERP .product .textProduct {
+  margin-top: 4vh;
+  padding: 10%;
+  display: grid;
+  grid-template-areas: "text" "image";
+}
+#containerERP .product .textProduct .text {
+  grid-area: text;
+}
+#containerERP .product .textProduct .text h2 {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #304FFF;
+  font-size: 2.5rem;
+}
+#containerERP .product .textProduct .text div p {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #525252;
+  font-size: 1.2rem;
+}
+#containerERP .product .textProduct .text div p span {
+  color: #304FFF;
+}
+#containerERP .product .textProduct .imageCard {
+  margin-top: 4vh;
+  grid-area: image;
+}
+#containerERP .product .textProduct .imageCard img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bannerStartERP {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "text" "image";
+  background-color: #1E1B39;
+  padding-bottom: 6vh;
+  padding-top: 8vh;
+}
+#bannerStartERP .spoERPStartText {
+  grid-area: text;
+  width: 80%;
+  margin-left: 10%;
+}
+#bannerStartERP .spoERPStartText h3 {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+  font-size: 7vw;
+  font-weight: 600;
+}
+#bannerStartERP .spoERPStartText .itemTextERP {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+}
+#bannerStartERP .spoERPStartText .itemTextERP div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+#bannerStartERP .spoERPStartText .itemTextERP div .number {
+  display: inline-block;
+  color: #FFCF56;
+  text-align: center;
+  margin-right: 12px;
+  font-size: 5vw;
+}
+#bannerStartERP .spoERPStartText .itemTextERP div .itemERPStart {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #f5f2f2;
+}
+#bannerStartERP .startImageERP {
+  grid-area: image;
+  width: 80vw;
+  margin-left: 10vw;
+}
+#bannerStartERP .startImageERP img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  #ERPHeader {
+    background-image: url(../../assets/bg_erp_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: "title" "images";
+  }
+  #ERPHeader .title {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 12vh;
+    grid-area: title;
+  }
+  #ERPHeader .title h3 {
+    color: #1E1B39;
+    font-size: 6vw;
+    font-weight: 900;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #ERPHeader .title p {
+    color: #525252;
+    font-size: 3vw;
+    font-weight: 400;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #ERPHeader .images {
+    grid-area: images;
+    margin-top: 4vh;
+    display: grid;
+    grid-template-areas: "image text";
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 1fr;
+    border: 1px solid transparent;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  #ERPHeader .images .img {
+    grid-area: image;
+  }
+  #ERPHeader .images .img img {
+    width: 100%;
+  }
+  #ERPHeader .images .text {
+    grid-area: text;
+    margin-top: 4vh;
+    width: 40vw;
+    margin-left: 0vw;
+    margin-bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #ERPHeader .images .text p {
+    color: #525252;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 80%;
+  }
+  #ERPHeader .images .text .buttonHeader {
+    display: inline-block;
+  }
+  #bannerPaymentERP {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 32px;
+    background-color: #1E1B39;
+    border-top: 3px solid #8BFFFF;
+    border-bottom: 3px solid #8BFFFF;
+    background-image: url(../../assets/banner_pay_ERP_laptop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 8vh;
+  }
+  #bannerPaymentERP .spoERPPaymentText {
+    width: 80vw;
+    margin: 20px auto 12px;
+  }
+  #bannerPaymentERP .spoERPPaymentText p {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    font-size: 2vw;
+  }
+  #bannerPaymentERP .spoERPPaymentText .accentSpoERP {
+    font-size: 1.5vw;
+    color: #FFCF56;
+  }
+  #containerERP {
+    width: 100vw;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    background: linear-gradient(209deg, rgba(139, 255, 255, 0.2) 0%, rgba(30, 27, 57, 0.2) 20.01%), #1E1B39;
+  }
+  #containerERP .titleProduct {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 4vh;
+    border-bottom: 1px solid #E0E0E0;
+  }
+  #containerERP .titleProduct h2 {
+    font-weight: 900;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #f5f2f2;
+  }
+  #containerERP .titleProduct h2 span {
+    color: #8BFFFF;
+  }
+  #containerERP .titleProduct p {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    font-size: 1.5rem;
+  }
+  #containerERP .product {
+    width: 80vw;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    box-shadow: none;
+    border-radius: 8px;
+    transition: all ease 0.4s;
+  }
+  #containerERP .product .textProduct {
+    margin-top: 4vh;
+    padding: 4%;
+    display: grid;
+    grid-template-areas: "text image";
+    grid-template-columns: 0.5fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  #containerERP .product .textProduct .text {
+    grid-area: text;
+  }
+  #containerERP .product .textProduct .text h2 {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #FFCF56;
+    font-size: 2.5rem;
+  }
+  #containerERP .product .textProduct .text div p {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    font-size: 1.2rem;
+  }
+  #containerERP .product .textProduct .text div p span {
+    color: #FFCF56;
+  }
+  #containerERP .product .textProduct .imageCard {
+    margin-top: 4vh;
+    grid-area: image;
+  }
+  #containerERP .product .textProduct .imageCard img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #containerERP .product .gridInverso {
+    grid-template-areas: "image text";
+  }
+  #containerERP .product:hover {
+    box-shadow: 0px 0px 6px 0px #8BFFFF;
+    transform: scale(1.1);
+    background: linear-gradient(209deg, rgba(139, 255, 255, 0.2) 0%, rgba(30, 27, 57, 0.2) 20.01%), #1E1B39;
+  }
+  #bannerStartERP {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "text image";
+    background: linear-gradient(209deg, rgba(139, 255, 255, 0.2) 0%, rgba(30, 27, 57, 0.2) 20.01%), #1E1B39;
+    padding-bottom: 6vh;
+    padding-top: 8vh;
+    border-bottom: 2px solid #8BFFFF;
+    border-top: 2px solid #8BFFFF;
+    align-items: center;
+  }
+  #bannerStartERP .spoERPStartText {
+    grid-area: text;
+    width: 50vw;
+    margin-left: 10%;
+  }
+  #bannerStartERP .spoERPStartText h3 {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  #bannerStartERP .spoERPStartText .itemTextERP {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+  }
+  #bannerStartERP .spoERPStartText .itemTextERP div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #bannerStartERP .spoERPStartText .itemTextERP div .number {
+    display: inline-block;
+    color: #1E1B39;
+    background-color: #FFCF56;
+    align-items: center;
+    width: 5%;
+    height: 4%;
+    border-radius: 4px;
+    justify-content: flex-start;
+    margin-right: 12px;
+    font-size: 1.5vw;
+  }
+  #bannerStartERP .spoERPStartText .itemTextERP div .itemERPStart {
+    width: 80%;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #f5f2f2;
+    align-self: center;
+    justify-content: flex-start;
+    font-size: 1.4vw;
+  }
+  #bannerStartERP .startImageERP {
+    grid-area: image;
+    width: 50vw;
+    margin-left: 0vw;
+  }
+  #bannerStartERP .startImageERP img {
+    width: 90%;
+  }
+  .ERPSection {
+    margin-top: 12vh !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

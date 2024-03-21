@@ -1,0 +1,167 @@
+
+
+#form{
+    display: grid;
+    grid-template-areas: 
+    'image' 
+    'form';
+    width: 100vw;
+    background-image: url(../../assets/section.header.mobile.png);
+
+    .containerImage{
+        grid-area: image;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 8vh;
+        .text{
+            color: $color-white;
+            h3{
+                font-size: 12vw;
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                font-weight: 900;
+                span{
+                    color: $color-accent-primary-yellow;
+                }
+            }
+
+        }
+        img{
+            display: none;
+        }
+    }
+
+    .containerForm{
+        grid-area: form;
+
+        .form{
+            width: 80vw;
+            margin-left: 10vw;
+            .form-label{
+                color: $color-white;
+            }
+            .flag{
+                span{
+                    background-color: $color-white;
+                    img{
+                        width: 20px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .input{
+                margin-bottom: 24px;
+            }
+        }
+        .check{
+            width: 80vw;
+            margin-left: 10vw;
+            color: $color-white;
+            margin-bottom: 6vh;
+            margin-top: 4ch;
+            #flexCheckDefault{
+                color: $color-accent-primary-yellow;
+            }
+        }
+        .btn{
+            width: 100vw;
+            margin-bottom: 8vh;
+            button{
+                background-color: $color-accent-primary-yellow;
+                color: $color-dark-primary;
+                height: 40px;
+                width: 80vw;
+                border: 2px solid $color-accent-primary-yellow;
+            }
+        }
+    }
+
+
+}
+
+@media(min-width:1200px){
+    #form{
+        display: grid;
+        grid-template-areas: 
+        'image form';
+        grid-template-columns: .5fr .5fr;
+        grid-template-rows: 1fr;
+        width: auto;
+        background-image: url(../../assets/section.header.mobile.png);
+    
+        .containerImage{
+            grid-area: image;
+            width: 50vw;
+            margin-left: 0vw;
+            padding: 4vw 5vw;
+            margin-top: 0vh;
+            .text{
+                color: $color-white;
+                h3{
+                    font-size: 5vw;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    font-weight: 900;
+                    span{
+                        color: $color-accent-primary-yellow;
+                    }
+                }
+    
+            }
+            img{
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    
+        .containerForm{
+            grid-area: form;
+            margin-left: 0vw;
+            padding: 4vw 5vw;
+
+            .form{
+                margin-left: 0;
+                width: 40vw;
+                background-color: $color-dark-primary;
+                padding: 4vh 4vw;
+                border-radius: 8px;
+
+                .form-label{
+                    color: $color-white;
+                }
+                .flag{
+                    span{
+                        background-color: $color-white;
+                        img{
+                            width: 20px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                .input{
+                    margin-bottom: 24px;
+                }
+            }
+            .check{
+                width: 40vw;
+                margin-left: 0vw;
+                color: $color-white;
+                margin-bottom: 6vh;
+                margin-top: 4vh;
+            }
+            .btn{
+                width: 40vw;
+                margin-bottom: 8vh;
+                margin-left: 0;
+                button{
+                    background-color: $color-accent-primary-yellow;
+                    color: $color-dark-primary;
+                    height: 48px;
+                    width: 100%;
+                    border: 2px solid $color-accent-primary-yellow;
+
+                }
+            }
+        }
+    
+    
+    }
+}
