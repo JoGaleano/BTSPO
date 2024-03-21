@@ -63,6 +63,11 @@ main{
             font-weight: 400;
             font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
             text-align: center;
+            font-size: 4.2vw;
+            &:last-child{
+                padding-bottom: 2vh;
+            }
+
         }
         .buttonHeader{
             display: flex;
@@ -70,7 +75,6 @@ main{
             gap: 24px;
             justify-content: center;
             align-items: center;
-            width: 80vw;
         }
     }
 
@@ -695,7 +699,7 @@ width: 100vw;
                     font-weight: 400;
                     font-family: 'Roboto', Arial, Helvetica, sans-serif;
                     text-align: center;
-                    font-size: 2.5vh;
+                    font-size: 2vw !important;
                     margin-top: -20px;
                 }
             }
@@ -836,6 +840,7 @@ width: 100vw;
                     transform: scale(1.1);
                     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;
                     z-index: 10;
+                    background: linear-gradient(209deg, rgba(139, 255, 255, 0.20) 0%, rgba(30, 27, 57, 0) 20%), #1e1b3909;
                 }
             }
     }
