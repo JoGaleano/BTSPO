@@ -1,15 +1,6 @@
 
 /*MOBILE FIRST*/
 
-body{
-    overflow-x: upset;
-
-}
-
-
-main{
-    margin: 0;
-}
 
 #containerHeader{
     border: 1px solid transparent;
@@ -591,7 +582,7 @@ width: 100vw;
 
 #containerFQA{
     margin-top: 12vh;
-    width: 100%;
+    width: 80%;
     margin-left: 10%;
     .text{
         text-align: center;
@@ -630,6 +621,7 @@ width: 100vw;
         }
     }
 }
+
 
 
 /*LAPTOP*/

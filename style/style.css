@@ -20,17 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /*para que como minimo sea el viewport*/
-  background-color: white;
-}
-
-/* justificacion de todos los parrafos */
-p {
-  text-align: justify;
-}
-
-main {
-  width: 80vw;
-  margin: auto;
+  max-width: 100%;
 }
 
 .buttonPrimary {
@@ -156,14 +146,6 @@ main {
   }
 }
 /*MOBILE FIRST*/
-body {
-  overflow-x: upset;
-}
-
-main {
-  margin: 0;
-}
-
 #containerHeader {
   border: 1px solid transparent;
   width: 100vw;
@@ -689,7 +671,7 @@ main {
 
 #containerFQA {
   margin-top: 12vh;
-  width: 100%;
+  width: 80%;
   margin-left: 10%;
 }
 #containerFQA .text {
@@ -1609,7 +1591,7 @@ main {
   }
 }
 #containerFooter {
-  width: 100vw;
+  max-width: 100vw;
   margin-top: 8vh;
   background-image: url(../../assets/footer_container.png);
   background-size: cover;
@@ -1737,10 +1719,6 @@ main {
     font-size: 1rem;
   }
 }
-body {
-  margin: 0;
-}
-
 #nav {
   position: relative;
   top: 0;
@@ -1906,10 +1884,6 @@ body {
     font-weight: 600;
   }
 }
-main {
-  margin: 0;
-}
-
 #ERPHeader {
   background-image: url(../../assets/bg_erp_header.png);
   background-size: cover;
