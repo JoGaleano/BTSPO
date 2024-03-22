@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     display: grid;
     grid-template-areas: 'title' 'images';
-
     .title{
         width: 90vw;
         margin-left: 5vw;
@@ -66,7 +65,7 @@
     background-image: url(../../assets/banner_pay_ERP.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 8vh;
+    padding-bottom: 8vh;
     .spoERPPaymentText{
         width: 80vw;
         margin: 20px auto 12px;
@@ -221,7 +220,7 @@
         background-repeat: no-repeat;
         display: grid;
         grid-template-areas: 'title' 'images';
-    
+        padding-bottom: 8vh;
         .title{
             width: 90vw;
             margin-left: 5vw;
@@ -301,7 +300,6 @@
         background-image: url(../../assets/banner_pay_ERP_laptop.png);
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 8vh;
         .spoERPPaymentText{
             width: 80vw;
             margin: 20px auto 12px;

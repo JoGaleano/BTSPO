@@ -2,15 +2,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none; /*elimina el estilo en las listas*/
-    text-decoration: none; /*elimina las viñetas*/
-    user-select: none; /*impide seleccionar el texto*/
+    list-style: none; 
+    text-decoration: none; 
+    user-select: none;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /*para que como minimo sea el viewport*/
+    min-height: 100vh; 
     max-width: 100vw;
     overflow-x: unset;
 }

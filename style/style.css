@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*VARIABLES - PALETA DE COLORES */
 /* GREY SCALE */
 /* DARK PRIMARY */
@@ -11,15 +10,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none; /*elimina el estilo en las listas*/
-  text-decoration: none; /*elimina las viñetas*/
-  user-select: none; /*impide seleccionar el texto*/
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /*para que como minimo sea el viewport*/
+  min-height: 100vh;
   max-width: 100vw;
   overflow-x: unset;
 }
@@ -1949,7 +1948,7 @@ body {
   background-image: url(../../assets/banner_pay_ERP.png);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 8vh;
+  padding-bottom: 8vh;
 }
 #bannerPaymentERP .spoERPPaymentText {
   width: 80vw;
@@ -2089,6 +2088,7 @@ body {
     background-repeat: no-repeat;
     display: grid;
     grid-template-areas: "title" "images";
+    padding-bottom: 8vh;
   }
   #ERPHeader .title {
     width: 90vw;
@@ -2164,7 +2164,6 @@ body {
     background-image: url(../../assets/banner_pay_ERP_laptop.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 8vh;
   }
   #bannerPaymentERP .spoERPPaymentText {
     width: 80vw;
