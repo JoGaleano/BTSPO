@@ -20,7 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /*para que como minimo sea el viewport*/
-  max-width: 100%;
+  max-width: 100vw;
+  overflow-x: unset;
 }
 
 .buttonPrimary {
