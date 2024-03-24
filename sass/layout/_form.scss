@@ -6,7 +6,7 @@
     'image' 
     'form';
     width: 100vw;
-    background-image: url(../../assets/section.header.mobile.png);
+    background: linear-gradient(209deg, rgba(139, 255, 255, 0.20) 0%, rgba(30, 27, 57, 0.20) 20.01%), #1E1B39;
 
     .containerImage{
         grid-area: image;
@@ -86,7 +86,7 @@
         grid-template-columns: .5fr .5fr;
         grid-template-rows: 1fr;
         width: auto;
-        background-image: url(../../assets/section.header.mobile.png);
+        background: linear-gradient(209deg, rgba(139, 255, 255, 0.20) 0%, rgba(30, 27, 57, 0.20) 20.01%), #1E1B39;
     
         .containerImage{
             grid-area: image;

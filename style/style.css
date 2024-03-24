@@ -1467,7 +1467,7 @@ body {
   display: grid;
   grid-template-areas: "image" "form";
   width: 100vw;
-  background-image: url(../../assets/section.header.mobile.png);
+  background: linear-gradient(209deg, rgba(139, 255, 255, 0.2) 0%, rgba(30, 27, 57, 0.2) 20.01%), #1E1B39;
 }
 #form .containerImage {
   grid-area: image;
@@ -1538,7 +1538,7 @@ body {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 1fr;
     width: auto;
-    background-image: url(../../assets/section.header.mobile.png);
+    background: linear-gradient(209deg, rgba(139, 255, 255, 0.2) 0%, rgba(30, 27, 57, 0.2) 20.01%), #1E1B39;
   }
   #form .containerImage {
     grid-area: image;
