@@ -16,3 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var videoElement = document.getElementById('videoFondo');
+  var playPromise = videoElement.play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(_ => {
+      // La reproducción automática comenzó exitosamente.
+    }).catch(error => {
+      console.error("Error al intentar reproducir el video: ", error);
+    });
+  }
+});
