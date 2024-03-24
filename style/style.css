@@ -712,24 +712,37 @@ body {
     overflow-x: hidden;
   }
   #containerHeader {
-    background: linear-gradient(45deg, #1E1B39, #8BFFFF);
-    background-image: url(../../assets/section.header.mobile.png);
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #1E1B39;
-    height: auto;
     padding-top: 0vh;
   }
-  #containerHeader .slogan {
+  #containerHeader .bg-video {
+    position: relative;
+  }
+  #containerHeader .bg-video .video {
+    z-index: -1;
+    height: 100%;
+  }
+  #containerHeader .infoHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+  }
+  #containerHeader .infoHeader .slogan {
     margin: 15vh auto 0;
     display: grid;
     grid-template-areas: "text image";
   }
-  #containerHeader .slogan .textSlogan {
+  #containerHeader .infoHeader .slogan .textSlogan {
     grid-area: "text";
     height: auto;
   }
-  #containerHeader .slogan .textSlogan .titleSlogan {
+  #containerHeader .infoHeader .slogan .textSlogan .titleSlogan {
     font-weight: 900;
     font-size: 8vw;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
@@ -737,26 +750,26 @@ body {
     text-transform: uppercase;
     text-align: end;
   }
-  #containerHeader .slogan .textSlogan .accentText {
+  #containerHeader .infoHeader .slogan .textSlogan .accentText {
     color: #FFCF56;
   }
-  #containerHeader .slogan .imageSlogan {
+  #containerHeader .infoHeader .slogan .imageSlogan {
     grid-area: "text";
     align-self: center;
     margin-top: 20px;
   }
-  #containerHeader .slogan .imageSlogan img {
+  #containerHeader .infoHeader .slogan .imageSlogan img {
     width: 50vw;
   }
-  #containerHeader .textHeader {
+  #containerHeader .infoHeader .textHeader {
     width: 80%;
     margin: 32px auto 40px;
   }
-  #containerHeader .textHeader .text {
+  #containerHeader .infoHeader .textHeader .text {
     margin-top: 8vh;
     margin-bottom: 5vh;
   }
-  #containerHeader .textHeader .text p {
+  #containerHeader .infoHeader .textHeader .text p {
     color: #f5f2f2;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -764,7 +777,7 @@ body {
     font-size: 2vw !important;
     margin-top: -20px;
   }
-  #containerHeader .textHeader .buttonHeader {
+  #containerHeader .infoHeader .textHeader .buttonHeader {
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
@@ -772,7 +785,7 @@ body {
     align-items: center;
     width: 80vw;
   }
-  #containerHeader .textHeader .btnVideo:hover {
+  #containerHeader .infoHeader .textHeader .btnVideo:hover {
     color: #1E1B39;
   }
   .modal-dialog {
@@ -825,6 +838,7 @@ body {
     color: #FFCF56;
   }
   #containerProducts {
+    margin-top: 10vh;
     width: 100vw;
   }
   #containerProducts .titleProduct {
@@ -1442,6 +1456,9 @@ body {
   }
 }
 @media (max-width: 1199px) {
+  #containerHeader .bg-video .video {
+    display: none;
+  }
   #containerHeader .textHeader .buttonHeader .btnVideo {
     display: none;
   }

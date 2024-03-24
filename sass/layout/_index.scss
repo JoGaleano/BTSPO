@@ -622,11 +622,6 @@ width: 100vw;
     }
 }
 
-@media(max-width:1998px){
-    .bg-video{
-       display: none;
-    }
-}
 
 
 
@@ -649,7 +644,6 @@ width: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 0vh;
-        height: 121vh;
         .bg-video{
             position: relative;
             .video{
@@ -663,10 +657,9 @@ width: 100vw;
             top: 0; // Ajusta esto según necesites para alinear el contenido
             left: 0;
             z-index: 1;
-            background-color: rgba(0, 0, 0, 0.24);
+            background-color: rgba(0, 0, 0, 0.377);
             padding-top: 8vh;
             padding-bottom: 10vh;
-            height: 100%;
             .slogan{
                 margin: 15vh auto 0; 
                 display: grid;
@@ -1475,6 +1468,11 @@ width: 100vw;
 
 @media(max-width:1199px){
     #containerHeader{
+        .bg-video{
+            .video{
+                display: none;
+            }
+        }
         .textHeader{
             .buttonHeader{
                 .btnVideo{
