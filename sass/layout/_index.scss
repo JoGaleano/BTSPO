@@ -622,6 +622,12 @@ width: 100vw;
     }
 }
 
+@media(max-width:1998px){
+    .bg-video{
+       display: none;
+    }
+}
+
 
 
 /*LAPTOP*/
@@ -639,74 +645,90 @@ width: 100vw;
     }
 
     #containerHeader{
-        background: $color-degradado-primary;
-        background-image: url(../../assets/section.header.mobile.png);
+        position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: $color-dark-primary;
-        height: auto;
         padding-top: 0vh;
-        .slogan{
-            margin: 15vh auto 0; 
-            display: grid;
-            grid-template-areas: 'text image';
-            .textSlogan{
-                grid-area: 'text';
-                height: auto;
-                .titleSlogan{
-                    font-weight: 900;
-                    font-size: 8vw;
-                    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-                    color: $color-white;
-
-                    text-transform: uppercase;
-                    text-align: end;
-                }
-    
-                .accentText{
-                    color: $color-accent-primary-yellow;
-                }
+        height: 121vh;
+        .bg-video{
+            position: relative;
+            .video{
+                z-index: -1;
+                height: 100%;
             }
+        }
+
+        .infoHeader{
+            position: absolute;
+            top: 0; // Ajusta esto según necesites para alinear el contenido
+            left: 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.24);
+            padding-top: 8vh;
+            padding-bottom: 10vh;
+            height: 100%;
+            .slogan{
+                margin: 15vh auto 0; 
+                display: grid;
+                grid-template-areas: 'text image';
+                .textSlogan{
+                    grid-area: 'text';
+                    height: auto;
+                    .titleSlogan{
+                        font-weight: 900;
+                        font-size: 8vw;
+                        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                        color: $color-white;
     
-            .imageSlogan{
-                grid-area: 'text';
-                align-self: center;
-                margin-top: 20px;
-                img{
-                    width: 50vw;
+                        text-transform: uppercase;
+                        text-align: end;
+                    }
+        
+                    .accentText{
+                        color: $color-accent-primary-yellow;
+                    }
+                }
+        
+                .imageSlogan{
+                    grid-area: 'text';
+                    align-self: center;
+                    margin-top: 20px;
+                    img{
+                        width: 50vw;
+                    }
+            
                 }
         
             }
-    
-        }
-    
-        .textHeader{
-            width: 80%;
-            margin: 32px auto 40px;
-            .text{
-                margin-top: 8vh;
-                margin-bottom: 5vh;
-                p{
-                    color: $color-white;
-                    font-weight: 400;
-                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                    text-align: center;
-                    font-size: 2vw !important;
-                    margin-top: -20px;
+        
+            .textHeader{
+                width: 80%;
+                margin: 32px auto 40px;
+                .text{
+                    margin-top: 8vh;
+                    margin-bottom: 5vh;
+                    p{
+                        color: $color-white;
+                        font-weight: 400;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        text-align: center;
+                        font-size: 2vw !important;
+                        margin-top: -20px;
+                    }
                 }
-            }
-
-            .buttonHeader{
-                display: flex;
-                flex-wrap: nowrap;
-                gap: 24px;
-                justify-content: center;
-                align-items: center;
-                width: 80vw;
-            }
-            .btnVideo{
-                &:hover{
-                    color: $color-dark-primary;
+    
+                .buttonHeader{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    gap: 24px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80vw;
+                }
+                .btnVideo{
+                    &:hover{
+                        color: $color-dark-primary;
+                    }
                 }
             }
         }
@@ -770,6 +792,7 @@ width: 100vw;
     }
 
     #containerProducts{
+        margin-top: 10vh;
         width: 100vw;
             .titleProduct{
                 width: 80vw;
