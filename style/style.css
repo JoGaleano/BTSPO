@@ -3124,28 +3124,28 @@ body {
   display: none;
 }
 
-#bannerPaymentReportes {
+#bannerPaymentVenta {
   width: 100vw;
   height: auto;
   margin: 0;
   padding: 32px;
   background-color: #1E1B39;
   border-top: 3px solid #8BFFFF;
-  background-image: url(../../assets/banner_pay_Reportes.png);
+  background-image: url(../../assets/banner_pay_ERP.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 8vh;
 }
-#bannerPaymentReportes .spoReportePaymentText {
+#bannerPaymentVenta .spoVentaPaymentText {
   width: 80vw;
   margin: 20px auto 12px;
 }
-#bannerPaymentReportes .spoReportePaymentText p {
+#bannerPaymentVenta .spoVentaPaymentText p {
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 5.5vw;
   color: #FFCF56;
 }
-#bannerPaymentReportes .spoReportePaymentText .accentSpoReporte {
+#bannerPaymentVenta .spoVentaPaymentText .accentSpoVenta {
   font-size: 5vw;
   color: #f5f2f2;
 }

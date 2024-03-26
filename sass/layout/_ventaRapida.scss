@@ -55,18 +55,18 @@
     }
 }
 
-#bannerPaymentReportes{
+#bannerPaymentVenta{
     width: 100vw;
     height: auto;
     margin: 0;
     padding: 32px;
     background-color: $color-dark-primary;
     border-top: 3px solid $color-accent-primary-cian;
-    background-image: url(../../assets/banner_pay_Reportes.png);
+    background-image: url(../../assets/banner_pay_ERP.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 8vh;
-    .spoReportePaymentText{
+    .spoVentaPaymentText{
         width: 80vw;
         margin: 20px auto 12px;
         p{
@@ -74,7 +74,7 @@
             font-size: 5.5vw;
             color: $color-accent-primary-yellow;
         }
-        .accentSpoReporte{
+        .accentSpoVenta{
             font-size: 5vw;
             color: $color-white;
         }
