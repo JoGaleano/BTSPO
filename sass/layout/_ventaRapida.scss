@@ -211,7 +211,7 @@
 
 }
 
-#containerPayment{
+#containerPaymentVenta{
     width: 100vw;
     margin-left: 0%;
     display: flex;
@@ -510,7 +510,7 @@
         }
     }
 
-    #bannerPaymentReportes{
+    #bannerPaymentVenta{
         width: 100vw;
         height: auto;
         margin: 0;
@@ -518,10 +518,10 @@
         background-color: $color-dark-primary;
         border-top: 3px solid $color-accent-primary-cian;
         border-bottom: 3px solid $color-accent-primary-cian;
-        background-image: url(../../assets/banner_pay_Reportes_laptop.png);
+        background-image: url(../../assets/banner_pay_ERP_laptop.png);
         background-size: cover;
         background-repeat: no-repeat;
-        .spoReportePaymentText{
+        .spoVentaPaymentText{
             width: 80vw;
             margin: 20px auto 12px;
             p{
@@ -529,7 +529,7 @@
                 color: $color-accent-primary-yellow;
                 font-size: 2vw;
             }
-            .accentSpoReporte{
+            .accentSpoVenta{
                 font-size: 1.5vw;
                 color: $color-white;
             }
@@ -700,7 +700,7 @@
         margin-top: 12vh !important;
     }
 
-    #containerPayment{
+    #containerPaymentVenta{
         width: 80%;
         margin-left: 10%;
         display: flex;

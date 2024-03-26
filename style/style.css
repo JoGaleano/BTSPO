@@ -2380,13 +2380,13 @@ body {
   width: 100%;
 }
 
-#containerPayment {
+#containerPaymentReportes {
   width: 100vw;
   margin-left: 0%;
   display: flex;
   flex-direction: column;
 }
-#containerPayment .card {
+#containerPaymentReportes .card {
   max-width: 90vw;
   margin: 10px auto;
   text-align: center;
@@ -2395,7 +2395,7 @@ body {
   transition: all ease 0.5s;
   position: relative;
 }
-#containerPayment .card .title {
+#containerPaymentReportes .card .title {
   background-color: #1E1B39;
   color: #f5f2f2;
   display: flex;
@@ -2406,13 +2406,13 @@ body {
   border-bottom: 1px solid #8BFFFF;
   border-radius: 8px 8px 0px 0px;
 }
-#containerPayment .card .title p {
+#containerPaymentReportes .card .title p {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 4vw;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-#containerPayment .card .description {
+#containerPaymentReportes .card .description {
   color: #1E1B39;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -2420,7 +2420,7 @@ body {
   text-align: start;
   font-size: 16px;
 }
-#containerPayment .card .preice p {
+#containerPaymentReportes .card .preice p {
   color: #304FFF;
   font-weight: 600;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -2428,20 +2428,20 @@ body {
   text-align: start;
   font-size: 16px;
 }
-#containerPayment .card .preice h2 {
+#containerPaymentReportes .card .preice h2 {
   color: #304FFF;
   font-size: 6.5vh;
   font-weight: 900;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-#containerPayment .card .preice h2 span {
+#containerPaymentReportes .card .preice h2 span {
   font-size: 4.5vh;
   font-weight: 600;
 }
-#containerPayment .card .functionalities {
+#containerPaymentReportes .card .functionalities {
   padding-bottom: 8vh;
 }
-#containerPayment .card .functionalities h3 {
+#containerPaymentReportes .card .functionalities h3 {
   color: #1E1B39;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -2449,17 +2449,17 @@ body {
   text-align: start;
   font-size: 14px;
 }
-#containerPayment .card .functionalities div {
+#containerPaymentReportes .card .functionalities div {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 90%;
   margin-left: 5%;
 }
-#containerPayment .card .functionalities div img {
+#containerPaymentReportes .card .functionalities div img {
   margin-right: 12px;
 }
-#containerPayment .card .functionalities div p {
+#containerPaymentReportes .card .functionalities div p {
   font-weight: 600;
   margin-bottom: 24px;
   color: #1E1B39;
@@ -2467,7 +2467,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-#containerPayment .card .button {
+#containerPaymentReportes .card .button {
   position: absolute;
   bottom: 0;
   margin-bottom: 24px;
@@ -2477,58 +2477,58 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#containerPayment .card .button .buttonCardPayment {
+#containerPaymentReportes .card .button .buttonCardPayment {
   background-color: #304FFF;
   border: 2px solid #304FFF;
   transition: background-position 0.5s ease;
   width: 70vw;
   height: 48px;
 }
-#containerPayment .card .button .buttonCardPayment a {
+#containerPaymentReportes .card .button .buttonCardPayment a {
   color: #f5f2f2;
   font-size: 1.2rem;
 }
-#containerPayment .card .button .buttonCardPayment:hover {
+#containerPaymentReportes .card .button .buttonCardPayment:hover {
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
   background-position: 0 100%;
 }
-#containerPayment .card .button .buttonCardPayment:hover a {
+#containerPaymentReportes .card .button .buttonCardPayment:hover a {
   color: #1E1B39;
 }
-#containerPayment .card01 {
+#containerPaymentReportes .card01 {
   background-image: url(../../assets/bg_card_payment.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #1E1B39;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
-#containerPayment .card01 .description {
+#containerPaymentReportes .card01 .description {
   color: #f5f2f2;
 }
-#containerPayment .card01 .preice p {
+#containerPaymentReportes .card01 .preice p {
   color: #FFCF56;
 }
-#containerPayment .card01 .preice h2 {
+#containerPaymentReportes .card01 .preice h2 {
   color: #f5f2f2;
 }
-#containerPayment .card01 .functionalities h3 {
+#containerPaymentReportes .card01 .functionalities h3 {
   color: #f5f2f2;
 }
-#containerPayment .card01 .functionalities div p {
+#containerPaymentReportes .card01 .functionalities div p {
   color: #f5f2f2;
 }
-#containerPayment .card01 .buttonCardPayment {
+#containerPaymentReportes .card01 .buttonCardPayment {
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
 }
-#containerPayment .card01 .buttonCardPayment a {
+#containerPaymentReportes .card01 .buttonCardPayment a {
   color: #1E1B39;
 }
-#containerPayment .card01:hover {
+#containerPaymentReportes .card01:hover {
   border: 2px solid #FFCF56;
 }
-#containerPayment .card02Reportes {
+#containerPaymentReportes .card02Reportes {
   max-width: 90vw;
   margin: 10px auto;
   text-align: center;
@@ -2538,50 +2538,50 @@ body {
   position: relative;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
-#containerPayment .card02Reportes .functionalities h3 {
+#containerPaymentReportes .card02Reportes .functionalities h3 {
   color: #f5f2f2;
 }
-#containerPayment .card02Reportes .functionalities .item {
+#containerPaymentReportes .card02Reportes .functionalities .item {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 90%;
   margin-left: 8%;
 }
-#containerPayment .card02Reportes .functionalities .item img {
+#containerPaymentReportes .card02Reportes .functionalities .item img {
   margin-right: 12px;
 }
-#containerPayment .card02Reportes .functionalities .item p {
+#containerPaymentReportes .card02Reportes .functionalities .item p {
   font-weight: 600;
   margin-bottom: 24px;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-#containerPayment .card02Reportes .functionalities .SPO {
+#containerPaymentReportes .card02Reportes .functionalities .SPO {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
 }
-#containerPayment .card02Reportes .functionalities .SPO div {
+#containerPaymentReportes .card02Reportes .functionalities .SPO div {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
   margin-left: 3%;
 }
-#containerPayment .card02Reportes .functionalities .SPO div img {
+#containerPaymentReportes .card02Reportes .functionalities .SPO div img {
   margin-right: 12px;
 }
-#containerPayment .card02Reportes .functionalities .SPO div p {
+#containerPaymentReportes .card02Reportes .functionalities .SPO div p {
   font-weight: 600;
   margin-bottom: 24px;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-#containerPayment .card02Reportes .functionalities .SPO .subItem {
+#containerPaymentReportes .card02Reportes .functionalities .SPO .subItem {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2590,14 +2590,14 @@ body {
   margin-left: 8%;
   margin-top: 0px;
 }
-#containerPayment .card02Reportes .buttonCardPayment {
+#containerPaymentReportes .card02Reportes .buttonCardPayment {
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
 }
-#containerPayment .card02Reportes .buttonCardPayment a {
+#containerPaymentReportes .card02Reportes .buttonCardPayment a {
   color: #1E1B39;
 }
-#containerPayment .card02Reportes:hover {
+#containerPaymentReportes .card02Reportes:hover {
   border: 2px solid #FFCF56;
 }
 
@@ -2817,13 +2817,13 @@ body {
   .ERPSection {
     margin-top: 12vh !important;
   }
-  #containerPayment {
+  #containerPaymentReportes {
     width: 80%;
     margin-left: 10%;
     display: flex;
     flex-direction: row;
   }
-  #containerPayment .card {
+  #containerPaymentReportes .card {
     max-width: 30%;
     margin: 10px auto;
     text-align: center;
@@ -2832,7 +2832,7 @@ body {
     transition: all ease 0.5s;
     position: relative;
   }
-  #containerPayment .card .title {
+  #containerPaymentReportes .card .title {
     background-color: #1E1B39;
     color: #f5f2f2;
     display: flex;
@@ -2842,13 +2842,13 @@ body {
     padding-left: 4vh;
     border-bottom: 1px solid #8BFFFF;
   }
-  #containerPayment .card .title p {
+  #containerPaymentReportes .card .title p {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2vw;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
   }
-  #containerPayment .card .description {
+  #containerPaymentReportes .card .description {
     color: #1E1B39;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -2856,7 +2856,7 @@ body {
     text-align: start;
     font-size: 16px;
   }
-  #containerPayment .card .preice p {
+  #containerPaymentReportes .card .preice p {
     color: #304FFF;
     font-weight: 600;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -2864,20 +2864,20 @@ body {
     text-align: start;
     font-size: 16px;
   }
-  #containerPayment .card .preice h2 {
+  #containerPaymentReportes .card .preice h2 {
     color: #304FFF;
     font-size: 6.5vh;
     font-weight: 900;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
   }
-  #containerPayment .card .preice h2 span {
+  #containerPaymentReportes .card .preice h2 span {
     font-size: 4.5vh;
     font-weight: 600;
   }
-  #containerPayment .card .functionalities {
+  #containerPaymentReportes .card .functionalities {
     padding-bottom: 4vh;
   }
-  #containerPayment .card .functionalities h3 {
+  #containerPaymentReportes .card .functionalities h3 {
     color: #1E1B39;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -2885,17 +2885,17 @@ body {
     text-align: start;
     font-size: 14px;
   }
-  #containerPayment .card .functionalities div {
+  #containerPaymentReportes .card .functionalities div {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 90%;
     margin-left: 5%;
   }
-  #containerPayment .card .functionalities div img {
+  #containerPaymentReportes .card .functionalities div img {
     margin-right: 12px;
   }
-  #containerPayment .card .functionalities div p {
+  #containerPaymentReportes .card .functionalities div p {
     font-weight: 600;
     margin-bottom: 24px;
     color: #1E1B39;
@@ -2903,102 +2903,102 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: start;
   }
-  #containerPayment .card .button .buttonCardPayment {
+  #containerPaymentReportes .card .button .buttonCardPayment {
     width: 20vw;
     height: 48px;
   }
-  #containerPayment .card .button .buttonCardPayment:hover {
+  #containerPaymentReportes .card .button .buttonCardPayment:hover {
     background-color: #FFCF56;
     border: 2px solid #FFCF56;
     background-position: 0 100%;
   }
-  #containerPayment .card .button .buttonCardPayment:hover a {
+  #containerPaymentReportes .card .button .buttonCardPayment:hover a {
     color: #1E1B39;
   }
-  #containerPayment .card:hover {
+  #containerPaymentReportes .card:hover {
     transform: scale(1.1);
     border: 2px solid #304FFF;
     border-radius: 8px;
   }
-  #containerPayment .card01 {
+  #containerPaymentReportes .card01 {
     background-image: url(../../assets/bg_card_payment.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #1E1B39;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   }
-  #containerPayment .card01 .description {
+  #containerPaymentReportes .card01 .description {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .preice p {
+  #containerPaymentReportes .card01 .preice p {
     color: #FFCF56;
   }
-  #containerPayment .card01 .preice h2 {
+  #containerPaymentReportes .card01 .preice h2 {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .functionalities h3 {
+  #containerPaymentReportes .card01 .functionalities h3 {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .functionalities div p {
+  #containerPaymentReportes .card01 .functionalities div p {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .buttonCardPayment {
+  #containerPaymentReportes .card01 .buttonCardPayment {
     background-color: #FFCF56;
     border: 2px solid #FFCF56;
   }
-  #containerPayment .card01 .buttonCardPayment a {
+  #containerPaymentReportes .card01 .buttonCardPayment a {
     color: #1E1B39;
   }
-  #containerPayment .card01:hover {
+  #containerPaymentReportes .card01:hover {
     border: 2px solid #FFCF56;
   }
-  #containerPayment .card02Reportes {
+  #containerPaymentReportes .card02Reportes {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   }
-  #containerPayment .card02Reportes .functionalities h3 {
+  #containerPaymentReportes .card02Reportes .functionalities h3 {
     color: #f5f2f2;
   }
-  #containerPayment .card02Reportes .functionalities .item {
+  #containerPaymentReportes .card02Reportes .functionalities .item {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 90%;
     margin-left: 8%;
   }
-  #containerPayment .card02Reportes .functionalities .item img {
+  #containerPaymentReportes .card02Reportes .functionalities .item img {
     margin-right: 12px;
   }
-  #containerPayment .card02Reportes .functionalities .item p {
+  #containerPaymentReportes .card02Reportes .functionalities .item p {
     font-weight: 600;
     margin-bottom: 24px;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: start;
   }
-  #containerPayment .card02Reportes .functionalities .SPO {
+  #containerPaymentReportes .card02Reportes .functionalities .SPO {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
   }
-  #containerPayment .card02Reportes .functionalities .SPO div {
+  #containerPaymentReportes .card02Reportes .functionalities .SPO div {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     margin-left: 3%;
   }
-  #containerPayment .card02Reportes .functionalities .SPO div img {
+  #containerPaymentReportes .card02Reportes .functionalities .SPO div img {
     margin-right: 12px;
   }
-  #containerPayment .card02Reportes .functionalities .SPO div p {
+  #containerPaymentReportes .card02Reportes .functionalities .SPO div p {
     font-weight: 600;
     margin-bottom: 24px;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: start;
   }
-  #containerPayment .card02Reportes .functionalities .SPO .subItem {
+  #containerPaymentReportes .card02Reportes .functionalities .SPO .subItem {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -3007,14 +3007,14 @@ body {
     margin-left: 8%;
     margin-top: 0px;
   }
-  #containerPayment .card02Reportes .buttonCardPayment {
+  #containerPaymentReportes .card02Reportes .buttonCardPayment {
     background-color: #FFCF56;
     border: 2px solid #FFCF56;
   }
-  #containerPayment .card02Reportes .buttonCardPayment a {
+  #containerPaymentReportes .card02Reportes .buttonCardPayment a {
     color: #1E1B39;
   }
-  #containerPayment .card02Reportes:hover {
+  #containerPaymentReportes .card02Reportes:hover {
     border: 2px solid #FFCF56;
   }
 }
@@ -3215,13 +3215,13 @@ body {
   width: 100%;
 }
 
-#containerPayment {
+#containerPaymentVenta {
   width: 100vw;
   margin-left: 0%;
   display: flex;
   flex-direction: column;
 }
-#containerPayment .card {
+#containerPaymentVenta .card {
   max-width: 90vw;
   margin: 10px auto;
   text-align: center;
@@ -3230,7 +3230,7 @@ body {
   transition: all ease 0.5s;
   position: relative;
 }
-#containerPayment .card .title {
+#containerPaymentVenta .card .title {
   background-color: #1E1B39;
   color: #f5f2f2;
   display: flex;
@@ -3241,13 +3241,13 @@ body {
   border-bottom: 1px solid #8BFFFF;
   border-radius: 8px 8px 0px 0px;
 }
-#containerPayment .card .title p {
+#containerPaymentVenta .card .title p {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 4vw;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-#containerPayment .card .description {
+#containerPaymentVenta .card .description {
   color: #1E1B39;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -3255,7 +3255,7 @@ body {
   text-align: start;
   font-size: 16px;
 }
-#containerPayment .card .preice p {
+#containerPaymentVenta .card .preice p {
   color: #304FFF;
   font-weight: 600;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -3263,20 +3263,20 @@ body {
   text-align: start;
   font-size: 16px;
 }
-#containerPayment .card .preice h2 {
+#containerPaymentVenta .card .preice h2 {
   color: #304FFF;
   font-size: 6.5vh;
   font-weight: 900;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-#containerPayment .card .preice h2 span {
+#containerPaymentVenta .card .preice h2 span {
   font-size: 4.5vh;
   font-weight: 600;
 }
-#containerPayment .card .functionalities {
+#containerPaymentVenta .card .functionalities {
   padding-bottom: 8vh;
 }
-#containerPayment .card .functionalities h3 {
+#containerPaymentVenta .card .functionalities h3 {
   color: #1E1B39;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -3284,17 +3284,17 @@ body {
   text-align: start;
   font-size: 14px;
 }
-#containerPayment .card .functionalities div {
+#containerPaymentVenta .card .functionalities div {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 90%;
   margin-left: 5%;
 }
-#containerPayment .card .functionalities div img {
+#containerPaymentVenta .card .functionalities div img {
   margin-right: 12px;
 }
-#containerPayment .card .functionalities div p {
+#containerPaymentVenta .card .functionalities div p {
   font-weight: 600;
   margin-bottom: 24px;
   color: #1E1B39;
@@ -3302,7 +3302,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-#containerPayment .card .button {
+#containerPaymentVenta .card .button {
   position: absolute;
   bottom: 0;
   margin-bottom: 24px;
@@ -3312,58 +3312,58 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#containerPayment .card .button .buttonCardPayment {
+#containerPaymentVenta .card .button .buttonCardPayment {
   background-color: #304FFF;
   border: 2px solid #304FFF;
   transition: background-position 0.5s ease;
   width: 70vw;
   height: 48px;
 }
-#containerPayment .card .button .buttonCardPayment a {
+#containerPaymentVenta .card .button .buttonCardPayment a {
   color: #f5f2f2;
   font-size: 1.2rem;
 }
-#containerPayment .card .button .buttonCardPayment:hover {
+#containerPaymentVenta .card .button .buttonCardPayment:hover {
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
   background-position: 0 100%;
 }
-#containerPayment .card .button .buttonCardPayment:hover a {
+#containerPaymentVenta .card .button .buttonCardPayment:hover a {
   color: #1E1B39;
 }
-#containerPayment .card01 {
+#containerPaymentVenta .card01 {
   background-image: url(../../assets/bg_card_payment.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #1E1B39;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
-#containerPayment .card01 .description {
+#containerPaymentVenta .card01 .description {
   color: #f5f2f2;
 }
-#containerPayment .card01 .preice p {
+#containerPaymentVenta .card01 .preice p {
   color: #FFCF56;
 }
-#containerPayment .card01 .preice h2 {
+#containerPaymentVenta .card01 .preice h2 {
   color: #f5f2f2;
 }
-#containerPayment .card01 .functionalities h3 {
+#containerPaymentVenta .card01 .functionalities h3 {
   color: #f5f2f2;
 }
-#containerPayment .card01 .functionalities div p {
+#containerPaymentVenta .card01 .functionalities div p {
   color: #f5f2f2;
 }
-#containerPayment .card01 .buttonCardPayment {
+#containerPaymentVenta .card01 .buttonCardPayment {
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
 }
-#containerPayment .card01 .buttonCardPayment a {
+#containerPaymentVenta .card01 .buttonCardPayment a {
   color: #1E1B39;
 }
-#containerPayment .card01:hover {
+#containerPaymentVenta .card01:hover {
   border: 2px solid #FFCF56;
 }
-#containerPayment .card02Reportes {
+#containerPaymentVenta .card02Reportes {
   max-width: 90vw;
   margin: 10px auto;
   text-align: center;
@@ -3373,50 +3373,50 @@ body {
   position: relative;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
-#containerPayment .card02Reportes .functionalities h3 {
+#containerPaymentVenta .card02Reportes .functionalities h3 {
   color: #f5f2f2;
 }
-#containerPayment .card02Reportes .functionalities .item {
+#containerPaymentVenta .card02Reportes .functionalities .item {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 90%;
   margin-left: 8%;
 }
-#containerPayment .card02Reportes .functionalities .item img {
+#containerPaymentVenta .card02Reportes .functionalities .item img {
   margin-right: 12px;
 }
-#containerPayment .card02Reportes .functionalities .item p {
+#containerPaymentVenta .card02Reportes .functionalities .item p {
   font-weight: 600;
   margin-bottom: 24px;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-#containerPayment .card02Reportes .functionalities .SPO {
+#containerPaymentVenta .card02Reportes .functionalities .SPO {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
 }
-#containerPayment .card02Reportes .functionalities .SPO div {
+#containerPaymentVenta .card02Reportes .functionalities .SPO div {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
   margin-left: 3%;
 }
-#containerPayment .card02Reportes .functionalities .SPO div img {
+#containerPaymentVenta .card02Reportes .functionalities .SPO div img {
   margin-right: 12px;
 }
-#containerPayment .card02Reportes .functionalities .SPO div p {
+#containerPaymentVenta .card02Reportes .functionalities .SPO div p {
   font-weight: 600;
   margin-bottom: 24px;
   font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: start;
 }
-#containerPayment .card02Reportes .functionalities .SPO .subItem {
+#containerPaymentVenta .card02Reportes .functionalities .SPO .subItem {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -3425,14 +3425,14 @@ body {
   margin-left: 8%;
   margin-top: 0px;
 }
-#containerPayment .card02Reportes .buttonCardPayment {
+#containerPaymentVenta .card02Reportes .buttonCardPayment {
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
 }
-#containerPayment .card02Reportes .buttonCardPayment a {
+#containerPaymentVenta .card02Reportes .buttonCardPayment a {
   color: #1E1B39;
 }
-#containerPayment .card02Reportes:hover {
+#containerPaymentVenta .card02Reportes:hover {
   border: 2px solid #FFCF56;
 }
 
@@ -3479,7 +3479,7 @@ body {
   #ventaHeader .images .img img {
     width: 100%;
   }
-  #bannerPaymentReportes {
+  #bannerPaymentVenta {
     width: 100vw;
     height: auto;
     margin: 0;
@@ -3487,20 +3487,20 @@ body {
     background-color: #1E1B39;
     border-top: 3px solid #8BFFFF;
     border-bottom: 3px solid #8BFFFF;
-    background-image: url(../../assets/banner_pay_Reportes_laptop.png);
+    background-image: url(../../assets/banner_pay_ERP_laptop.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
-  #bannerPaymentReportes .spoReportePaymentText {
+  #bannerPaymentVenta .spoVentaPaymentText {
     width: 80vw;
     margin: 20px auto 12px;
   }
-  #bannerPaymentReportes .spoReportePaymentText p {
+  #bannerPaymentVenta .spoVentaPaymentText p {
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     color: #FFCF56;
     font-size: 2vw;
   }
-  #bannerPaymentReportes .spoReportePaymentText .accentSpoReporte {
+  #bannerPaymentVenta .spoVentaPaymentText .accentSpoVenta {
     font-size: 1.5vw;
     color: #f5f2f2;
   }
@@ -3652,13 +3652,13 @@ body {
   .ERPSection {
     margin-top: 12vh !important;
   }
-  #containerPayment {
+  #containerPaymentVenta {
     width: 80%;
     margin-left: 10%;
     display: flex;
     flex-direction: row;
   }
-  #containerPayment .card {
+  #containerPaymentVenta .card {
     max-width: 30%;
     margin: 10px auto;
     text-align: center;
@@ -3667,7 +3667,7 @@ body {
     transition: all ease 0.5s;
     position: relative;
   }
-  #containerPayment .card .title {
+  #containerPaymentVenta .card .title {
     background-color: #1E1B39;
     color: #f5f2f2;
     display: flex;
@@ -3677,13 +3677,13 @@ body {
     padding-left: 4vh;
     border-bottom: 1px solid #8BFFFF;
   }
-  #containerPayment .card .title p {
+  #containerPaymentVenta .card .title p {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2vw;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
   }
-  #containerPayment .card .description {
+  #containerPaymentVenta .card .description {
     color: #1E1B39;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -3691,7 +3691,7 @@ body {
     text-align: start;
     font-size: 16px;
   }
-  #containerPayment .card .preice p {
+  #containerPaymentVenta .card .preice p {
     color: #304FFF;
     font-weight: 600;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -3699,20 +3699,20 @@ body {
     text-align: start;
     font-size: 16px;
   }
-  #containerPayment .card .preice h2 {
+  #containerPaymentVenta .card .preice h2 {
     color: #304FFF;
     font-size: 6.5vh;
     font-weight: 900;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
   }
-  #containerPayment .card .preice h2 span {
+  #containerPaymentVenta .card .preice h2 span {
     font-size: 4.5vh;
     font-weight: 600;
   }
-  #containerPayment .card .functionalities {
+  #containerPaymentVenta .card .functionalities {
     padding-bottom: 4vh;
   }
-  #containerPayment .card .functionalities h3 {
+  #containerPaymentVenta .card .functionalities h3 {
     color: #1E1B39;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -3720,17 +3720,17 @@ body {
     text-align: start;
     font-size: 14px;
   }
-  #containerPayment .card .functionalities div {
+  #containerPaymentVenta .card .functionalities div {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 90%;
     margin-left: 5%;
   }
-  #containerPayment .card .functionalities div img {
+  #containerPaymentVenta .card .functionalities div img {
     margin-right: 12px;
   }
-  #containerPayment .card .functionalities div p {
+  #containerPaymentVenta .card .functionalities div p {
     font-weight: 600;
     margin-bottom: 24px;
     color: #1E1B39;
@@ -3738,102 +3738,102 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: start;
   }
-  #containerPayment .card .button .buttonCardPayment {
+  #containerPaymentVenta .card .button .buttonCardPayment {
     width: 20vw;
     height: 48px;
   }
-  #containerPayment .card .button .buttonCardPayment:hover {
+  #containerPaymentVenta .card .button .buttonCardPayment:hover {
     background-color: #FFCF56;
     border: 2px solid #FFCF56;
     background-position: 0 100%;
   }
-  #containerPayment .card .button .buttonCardPayment:hover a {
+  #containerPaymentVenta .card .button .buttonCardPayment:hover a {
     color: #1E1B39;
   }
-  #containerPayment .card:hover {
+  #containerPaymentVenta .card:hover {
     transform: scale(1.1);
     border: 2px solid #304FFF;
     border-radius: 8px;
   }
-  #containerPayment .card01 {
+  #containerPaymentVenta .card01 {
     background-image: url(../../assets/bg_card_payment.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #1E1B39;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   }
-  #containerPayment .card01 .description {
+  #containerPaymentVenta .card01 .description {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .preice p {
+  #containerPaymentVenta .card01 .preice p {
     color: #FFCF56;
   }
-  #containerPayment .card01 .preice h2 {
+  #containerPaymentVenta .card01 .preice h2 {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .functionalities h3 {
+  #containerPaymentVenta .card01 .functionalities h3 {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .functionalities div p {
+  #containerPaymentVenta .card01 .functionalities div p {
     color: #f5f2f2;
   }
-  #containerPayment .card01 .buttonCardPayment {
+  #containerPaymentVenta .card01 .buttonCardPayment {
     background-color: #FFCF56;
     border: 2px solid #FFCF56;
   }
-  #containerPayment .card01 .buttonCardPayment a {
+  #containerPaymentVenta .card01 .buttonCardPayment a {
     color: #1E1B39;
   }
-  #containerPayment .card01:hover {
+  #containerPaymentVenta .card01:hover {
     border: 2px solid #FFCF56;
   }
-  #containerPayment .card02Reportes {
+  #containerPaymentVenta .card02Reportes {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
   }
-  #containerPayment .card02Reportes .functionalities h3 {
+  #containerPaymentVenta .card02Reportes .functionalities h3 {
     color: #f5f2f2;
   }
-  #containerPayment .card02Reportes .functionalities .item {
+  #containerPaymentVenta .card02Reportes .functionalities .item {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 90%;
     margin-left: 8%;
   }
-  #containerPayment .card02Reportes .functionalities .item img {
+  #containerPaymentVenta .card02Reportes .functionalities .item img {
     margin-right: 12px;
   }
-  #containerPayment .card02Reportes .functionalities .item p {
+  #containerPaymentVenta .card02Reportes .functionalities .item p {
     font-weight: 600;
     margin-bottom: 24px;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: start;
   }
-  #containerPayment .card02Reportes .functionalities .SPO {
+  #containerPaymentVenta .card02Reportes .functionalities .SPO {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
   }
-  #containerPayment .card02Reportes .functionalities .SPO div {
+  #containerPaymentVenta .card02Reportes .functionalities .SPO div {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     margin-left: 3%;
   }
-  #containerPayment .card02Reportes .functionalities .SPO div img {
+  #containerPaymentVenta .card02Reportes .functionalities .SPO div img {
     margin-right: 12px;
   }
-  #containerPayment .card02Reportes .functionalities .SPO div p {
+  #containerPaymentVenta .card02Reportes .functionalities .SPO div p {
     font-weight: 600;
     margin-bottom: 24px;
     font-weight: 400;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: start;
   }
-  #containerPayment .card02Reportes .functionalities .SPO .subItem {
+  #containerPaymentVenta .card02Reportes .functionalities .SPO .subItem {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -3842,14 +3842,14 @@ body {
     margin-left: 8%;
     margin-top: 0px;
   }
-  #containerPayment .card02Reportes .buttonCardPayment {
+  #containerPaymentVenta .card02Reportes .buttonCardPayment {
     background-color: #FFCF56;
     border: 2px solid #FFCF56;
   }
-  #containerPayment .card02Reportes .buttonCardPayment a {
+  #containerPaymentVenta .card02Reportes .buttonCardPayment a {
     color: #1E1B39;
   }
-  #containerPayment .card02Reportes:hover {
+  #containerPaymentVenta .card02Reportes:hover {
     border: 2px solid #FFCF56;
   }
 }
