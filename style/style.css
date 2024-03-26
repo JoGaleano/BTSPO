@@ -1307,6 +1307,7 @@ body {
   grid-template-areas: "image" "form";
   width: 100vw;
   background: linear-gradient(209deg, rgba(139, 255, 255, 0.2) 0%, rgba(30, 27, 57, 0.2) 20.01%), #1E1B39;
+  padding-top: 10vh;
 }
 #form .containerImage {
   grid-area: image;
@@ -1576,7 +1577,7 @@ body {
   }
 }
 #nav {
-  position: relative;
+  position: fixed;
   top: 0;
   background-color: #1E1B39 !important;
   box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
@@ -1584,6 +1585,7 @@ body {
   z-index: 10;
   height: 64px;
   margin-top: 0;
+  max-width: 100%;
 }
 #nav .navbar-brand {
   width: 10%;
@@ -1591,6 +1593,11 @@ body {
 }
 #nav .navbar-brand img {
   width: 100%;
+}
+#nav .navbar-collapse {
+  background-color: #1E1B39;
+  margin-top: 2vh;
+  padding-bottom: 2vh;
 }
 #nav .navbar-collapse .navbar-nav {
   width: 100%;
@@ -1600,7 +1607,7 @@ body {
 }
 #nav .navbar-collapse form .btn {
   width: 300px;
-  margin-left: 40%;
+  margin-left: 5%;
   background-color: #FFCF56;
   border: 2px solid #FFCF56;
   color: #1E1B39;
@@ -1613,6 +1620,17 @@ body {
   font-weight: 600;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-decoration: none;
+}
+#nav .navbar-collapse .dropdown-menu {
+  background-color: #1E1B39;
+}
+#nav .navbar-collapse .dropdown-menu li a {
+  color: #f5f2f2;
+}
+#nav .navbar-collapse .dropdown-menu li a:hover {
+  background-color: transparent;
+  color: #FFCF56;
+  font-weight: 600;
 }
 #nav .active {
   color: #FFCF56 !important;
@@ -1631,14 +1649,17 @@ body {
   border: 1px solid #FFCF56;
 }
 
+.DemoNav {
+  width: 100%;
+}
+
 @media (max-width: 991px) {
   #navbarNav {
     background-color: #1E1B39;
-    margin-left: 0;
-    width: 100%;
-    margin-top: 2vh;
-    border-radius: 8px;
-    padding-top: 4vh;
+  }
+  #navbarNav .navbar-collapse {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
   }
   #navbarNav form:not(.collapsed) {
     margin-bottom: 4vh;
@@ -1661,6 +1682,10 @@ body {
   }
   #nav .navbar-brand img {
     width: 100%;
+  }
+  #nav .navbar-collapse {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
   }
   #nav .navbar-collapse .navbar-nav {
     width: 100%;
@@ -1698,12 +1723,19 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  #nav {
+    max-width: 100%;
+  }
   #nav .navbar-brand {
     width: 6%;
     margin-left: 16px;
   }
   #nav .navbar-brand img {
     width: 100%;
+  }
+  #nav .navbar-collapse {
+    margin-top: 0vh;
+    padding-bottom: 0vh;
   }
   #nav .navbar-collapse .navbar-nav {
     width: 100%;
@@ -1727,6 +1759,21 @@ body {
   #nav .navbar-collapse form .btn:hover a {
     color: #FFCF56;
   }
+  #nav .navbar-collapse .dropdown-menu {
+    background-color: #1E1B39;
+  }
+  #nav .navbar-collapse .dropdown-menu li a {
+    color: #f5f2f2;
+  }
+  #nav .navbar-collapse .dropdown-menu li a:hover {
+    background-color: transparent;
+    color: #FFCF56;
+    font-weight: 600;
+  }
+  #nav .navbar-collapse .dropdown-menu .activeDrop {
+    color: #FFCF56;
+    font-weight: 600;
+  }
   #nav .active {
     color: #FFCF56 !important;
     font-weight: 600;
@@ -1746,6 +1793,7 @@ body {
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas: "title" "images";
+  padding-top: 10vh;
 }
 #ERPHeader .title {
   width: 90vw;
@@ -1945,6 +1993,7 @@ body {
     display: grid;
     grid-template-areas: "title" "images";
     padding-bottom: 8vh;
+    padding-top: 12vh;
   }
   #ERPHeader .title {
     width: 90vw;
@@ -2189,6 +2238,7 @@ body {
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas: "title" "images";
+  padding-top: 8vh;
 }
 #reportsHeader .title {
   width: 90vw;
@@ -2609,6 +2659,7 @@ body {
     display: grid;
     grid-template-areas: "title" "images";
     padding-bottom: 8vh;
+    padding-top: 12vh;
   }
   #reportsHeader .title {
     width: 90vw;
@@ -2663,7 +2714,7 @@ body {
   #bannerPaymentReportes .spoReportePaymentText p {
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     color: #FFCF56;
-    font-size: 2vw;
+    font-size: 2vw !important;
   }
   #bannerPaymentReportes .spoReportePaymentText .accentSpoReporte {
     font-size: 1.5vw;
@@ -3024,6 +3075,7 @@ body {
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas: "title" "images";
+  padding-top: 10vh;
 }
 #ventaHeader .title {
   width: 90vw;
@@ -3444,6 +3496,7 @@ body {
     display: grid;
     grid-template-areas: "title" "images";
     padding-bottom: 8vh;
+    padding-top: 12vh;
   }
   #ventaHeader .title {
     width: 90vw;

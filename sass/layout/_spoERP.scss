@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     display: grid;
     grid-template-areas: 'title' 'images';
+    padding-top: 10vh;
     .title{
         width: 90vw;
         margin-left: 5vw;
@@ -221,6 +222,7 @@
         display: grid;
         grid-template-areas: 'title' 'images';
         padding-bottom: 8vh;
+        padding-top: 12vh;
         .title{
             width: 90vw;
             margin-left: 5vw;

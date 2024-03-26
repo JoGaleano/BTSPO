@@ -1,6 +1,6 @@
 
 #nav{
-    position: relative;
+    position: fixed;
     top: 0;
     background-color:  $color-dark-primary !important;
     box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
@@ -8,7 +8,7 @@
     z-index: 10;
     height: 64px;
     margin-top: 0;
-
+    max-width: 100%;
     .navbar-brand{
         width: 10%;
         margin-left: 16px;
@@ -20,16 +20,20 @@
 
 
     .navbar-collapse{
+        background-color: $color-dark-primary;
+        margin-top: 2vh;
+        padding-bottom: 2vh;
         .navbar-nav{
             width: 100%;
             .nav-item{
                 margin-left: 32px;
             }
         }
+
         form{
             .btn{
                 width: 300px;
-                margin-left: 40%;
+                margin-left: 5%;
                 background-color: $color-accent-primary-yellow;
                 border: 2px solid $color-accent-primary-yellow;
                 a{
@@ -43,6 +47,20 @@
                 font-family: 'Roboto', Arial, Helvetica, sans-serif;
                 transition: all ease 0.5s;
             }
+        }
+
+        .dropdown-menu{
+            background-color: $color-dark-primary;
+            li{
+                a{
+                    color: $color-white;
+                    &:hover{
+                        background-color: transparent;
+                        color: $color-accent-primary-yellow;
+                        font-weight: 600;
+                    }
+                }
+            } 
         }
     }
 
@@ -70,14 +88,17 @@
 
 }
 
+.DemoNav{
+    width: 100%;
+}
+
 @media(max-width:991px){
     #navbarNav{
         background-color: $color-dark-primary;
-        margin-left: 0;
-        width: 100%;
-        margin-top: 2vh;
-        border-radius: 8px;
-        padding-top: 4vh;
+        .navbar-collapse{
+            margin-top: 0vh;
+            padding-bottom: 0vh;
+        }
         form:not(.collapsed){
             margin-bottom: 4vh;
             .btn{
@@ -106,6 +127,8 @@
         }
     
         .navbar-collapse{
+            margin-top: 0vh;
+            padding-bottom: 0vh;
             .navbar-nav{
                 width: 100%;
                 .nav-item{
@@ -153,6 +176,7 @@
 
 @media(min-width:1200px){
     #nav{    
+        max-width: 100%;
         .navbar-brand{
             width: 6%;
             margin-left: 16px;
@@ -162,6 +186,8 @@
         }
     
         .navbar-collapse{
+            margin-top: 0vh;
+            padding-bottom: 0vh;
             .navbar-nav{
                 width: 100%;
                 .nav-item{
@@ -184,6 +210,24 @@
                             color: $color-accent-primary-yellow;
                         }
                     }
+                }
+            }
+            .dropdown-menu{
+                background-color: $color-dark-primary;
+                li{
+                    a{
+                        color: $color-white;
+                        &:hover{
+                            background-color: transparent;
+                            color: $color-accent-primary-yellow;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .activeDrop{
+                    color: $color-accent-primary-yellow;
+                    font-weight: 600;
                 }
             }
         }
