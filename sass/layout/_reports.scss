@@ -1,0 +1,685 @@
+
+
+#reportsHeader{
+    background-image: url(../../assets/bg_erp_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: 'title' 'images';
+    .title{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 12vh;
+        grid-area: title;
+        h3{
+            color: $color-dark-primary;
+            font-size: 10vw;
+            font-weight: 900;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        p{
+            color: $color-grayscale-grey-p8;
+            font-size: 5vw;
+            font-weight: 400;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    }
+
+    .images{
+        grid-area: images;
+        margin-top: 4vh;
+        .img{
+            margin-left: 5vw;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            margin-top: 4vh;
+            width: 80vw;
+            margin-left: 10vw;
+            margin-bottom: 8vh;
+            p{
+                color: $color-grayscale-grey-p8;
+                font-size: 5vw;
+                font-weight: 400;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            .buttonHeader{
+                display: none;
+            }
+        }
+    }
+}
+
+#bannerPaymentReportes{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 32px;
+    background-color: $color-dark-primary;
+    border-top: 3px solid $color-accent-primary-cian;
+    background-image: url(../../assets/banner_pay_Reportes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 8vh;
+    .spoReportePaymentText{
+        width: 80vw;
+        margin: 20px auto 12px;
+        p{
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            font-size: 5.5vw;
+            color: $color-accent-primary-yellow;
+        }
+        .accentSpoReporte{
+            font-size: 5vw;
+            color: $color-white;
+        }
+    }
+    
+}
+
+
+#containerERP{
+    width: 100vw;
+    .titleProduct{
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 6vh;
+        padding-bottom: 3vh;
+        h2{
+            font-weight: 900;
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            font-size: 3.5rem;
+            span{
+                color: $color-indigo-A700;
+            }
+        }
+        p{
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-grayscale-grey-p8;
+            font-size: 2rem;
+        }
+
+    }
+    .product{
+        width: 80vw;
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2) ;
+        border-radius: 8px;
+        
+        .textProduct{
+            margin-top: 4vh;
+            padding: 10%;
+            display: grid;
+            grid-template-areas: 'text' 'image';
+            .text{
+                grid-area: text;
+                h2{
+                    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                    color: $color-indigo-A700;
+                    font-size: 2.5rem;
+                }
+                div{
+                    p{
+                        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                        color: $color-grayscale-grey-p8;
+                        font-size: 1.2rem;
+                        span{
+                            color: $color-indigo-A700;
+                        }
+                    }
+                }
+            }
+
+            .imageCard{
+                margin-top: 4vh;
+                grid-area: image;
+                img{
+                    width: 80%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+#bannerStartERP{
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 'text' 'image';
+    background-color: $color-dark-primary;
+    padding-bottom: 6vh;
+    padding-top: 8vh;
+    .spoERPStartText{
+        grid-area: text;
+        width: 80%;
+        margin-left: 10%;
+        h3{
+            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+            color: $color-white;
+            font-size: 7vw;
+            font-weight: 600;
+
+        }
+        .itemTextERP{
+            display: flex;
+            flex-direction: column;
+            margin-top: 4vh;
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                .number{
+                    display: inline-block;
+                    color: $color-accent-primary-yellow;
+                    text-align: center;
+                    margin-right: 12px;
+                    font-size: 5vw;
+                }
+                .itemERPStart{
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    color: $color-white;
+                }
+
+            }
+        }
+
+    }
+    .startImageERP{
+        grid-area: image;
+        width: 80vw;
+        margin-left: 10vw;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+
+@media(min-width:1200px){
+    #reportsHeader{
+        background-image: url(../../assets/bg_erp_header.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-areas: 'title' 'images';
+        padding-bottom: 8vh;
+        .title{
+            width: 90vw;
+            margin-left: 5vw;
+            margin-top: 12vh;
+            grid-area: title;
+            h3{
+                color: $color-dark-primary;
+                font-size: 6vw;
+                font-weight: 900;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            p{
+                color: $color-grayscale-grey-p8;
+                font-size: 2vw;
+                font-weight: 400;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+        }
+    
+        .images{
+            grid-area: images;
+            margin-top: 4vh;
+            border: 1px solid transparent;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            .img{
+                grid-area: image;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #bannerPaymentReportes{
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 32px;
+        background-color: $color-dark-primary;
+        border-top: 3px solid $color-accent-primary-cian;
+        border-bottom: 3px solid $color-accent-primary-cian;
+        background-image: url(../../assets/banner_pay_Reportes_laptop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .spoReportePaymentText{
+            width: 80vw;
+            margin: 20px auto 12px;
+            p{
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-accent-primary-yellow;
+                font-size: 2vw;
+            }
+            .accentSpoReporte{
+                font-size: 1.5vw;
+                color: $color-white;
+            }
+        }
+        
+    }
+
+    #containerERP{
+        width: 100vw;
+        padding-top: 8vh ;
+        padding-bottom: 8vh;
+        background: linear-gradient(209deg, rgba(139, 255, 255, 0.20) 0%, rgba(30, 27, 57, 0.20) 20.01%), #1E1B39;
+        
+        .titleProduct{
+            width: 80vw;
+            margin: 0 auto;
+            padding-top: 4vh;
+            border-bottom: 1px solid $color-grayscale-grey-p2;
+            h2{
+                font-weight: 900;
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                font-size: 3rem;
+                color: $color-white;
+                span{
+                    color: $color-accent-primary-cian;
+                }
+            }
+            p{
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                font-size: 1.5rem;
+            }
+    
+        }
+        .product{
+            width: 80vw;
+            height: auto;
+            margin: 0px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 4px;
+            margin-bottom: 40px;
+            box-shadow: none ;
+            border-radius: 8px;
+            transition: all ease 0.4s;
+            .textProduct{
+                margin-top: 4vh;
+                padding: 4%;
+                display: grid;
+                grid-template-areas: 'text image';
+                grid-template-columns: 0.5fr 0.5fr;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                .text{
+                    grid-area: text;
+                    h2{
+                        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                        color: $color-accent-primary-yellow;
+                        font-size: 2.5rem;
+                    }
+                    div{
+                        p{
+                            font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                            color: $color-white;
+                            font-size: 1.2rem;
+                            span{
+                                color: $color-accent-primary-yellow;
+                            }
+                        }
+                    }
+                }
+    
+                .imageCard{
+                    margin-top: 4vh;
+                    grid-area: image;
+                    img{
+                        width: 80%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+    
+            }
+
+            .gridInverso{
+                grid-template-areas: 'image text';
+            }
+            &:hover{
+                box-shadow: 0px 0px 6px 0px #8BFFFF ;
+                transform: scale(1.1);
+                background: linear-gradient(209deg, rgba(139, 255, 255, 0.20) 0%, rgba(30, 27, 57, 0.20) 20.01%), #1E1B39;
+            }
+        }
+    
+    }
+
+    #bannerStartERP{
+        width: 100vw;
+        display: grid;
+        grid-template-areas: 'text image';
+        background: linear-gradient(209deg, rgba(139, 255, 255, 0.20) 0%, rgba(30, 27, 57, 0.20) 20.01%), #1E1B39;
+        padding-bottom: 6vh;
+        padding-top: 8vh;
+        border-bottom: 2px solid $color-accent-primary-cian;
+        border-top: 2px solid $color-accent-primary-cian;
+        align-items: center;
+        .spoERPStartText{
+            grid-area: text;
+            width: 50vw;
+            margin-left: 10%;
+            h3{
+                font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+                color: $color-white;
+                font-size: 4vw;
+                font-weight: 600;
+    
+            }
+            .itemTextERP{
+                display: flex;
+                flex-direction: column;
+                margin-top: 4vh;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .number{
+                        display: inline-block;
+                        color: $color-dark-primary;
+                        background-color: $color-accent-primary-yellow;
+                        align-items: center;
+                        width: 5%;
+                        height: 4%;
+                        border-radius: 4px;
+                        justify-content: flex-start;
+                        margin-right: 12px;
+                        font-size: 1.5vw;
+                    }
+                    .itemERPStart{
+                        width: 80%;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        color: $color-white;
+                        align-self: center;
+                        justify-content: flex-start;
+                        font-size: 1.4vw;
+                    }
+    
+                }
+            }
+    
+        }
+        .startImageERP{
+            grid-area: image;
+            width: 50vw;
+            margin-left: 0vw;
+            img{
+                width: 90%;
+            }
+        }
+    
+    }
+
+    .ERPSection{
+        margin-top: 12vh !important;
+    }
+
+    #containerPayment{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        .card {
+            max-width: 30%;
+            margin: 10px auto;
+            text-align: center;
+            padding-bottom: 6vh;
+            border-radius: 8px;
+            transition: all ease 0.5s;
+            position: relative;
+
+                .title{
+                    background-color: $color-dark-primary;
+                    color: $color-white;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-top: 4vh;
+                    padding-left: 4vh;
+                    border-bottom: 1px solid $color-accent-primary-cian;
+                    p{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 1.2vw;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    }
+                }
+                .description{
+                    color: $color-dark-primary;
+                    font-weight: 400;
+                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                    padding: 4vh;
+                    text-align:start ;
+                    font-size: 16px;
+                }
+    
+                .preice{
+                    p{
+                        color: $color-indigo-A700;
+                        font-weight: 600;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        padding: 1vh 4vh;
+                        text-align:start ;
+                        font-size: 16px;
+                    }
+                    h2{
+                        color: $color-indigo-A700;
+                        font-size: 6.5vh;
+                        font-weight: 900;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        span{
+                            font-size: 4.5vh;
+                            font-weight: 600;
+                        }
+                    }
+                }
+    
+                .functionalities{
+                    padding-bottom: 4vh;
+                    h3{
+                        color: $color-dark-primary;
+                        font-weight: 400;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        padding: 4vh 4vh 2vh 4vh;
+                        text-align:start ;
+                        font-size: 14px;
+    
+                    }
+
+                    div{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 90%;
+                        margin-left: 5%;
+                        img{
+                            margin-right: 12px;
+                        }
+                        p{
+                            font-weight: 600;
+                            margin-bottom: 24px;
+                            color: $color-dark-primary;
+                            font-weight: 400;
+                            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                            text-align:start ;
+
+                        }
+                    }
+    
+                }
+    
+                .button{
+                    .buttonCardPayment{
+                        width: 20vw;
+                        height: 48px;
+                        &:hover{
+                            background-color: $color-accent-primary-yellow;
+                            border: 2px solid $color-accent-primary-yellow;
+                            background-position: 0 100%;
+                            a{
+                                color: $color-dark-primary;
+                            }
+                        }
+                     }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    border: 2px solid $color-indigo-A700;
+                    border-radius: 8px;
+                }
+              }
+
+        .card01{
+                background-image: url(../../assets/bg_card_payment.png);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-color: $color-dark-primary;
+                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+                .description{
+                    color: $color-white;
+                }
+    
+                .preice{
+                    p{
+                        color: $color-accent-primary-yellow;
+                    }
+                    h2{
+                        color: $color-white;
+                    }
+                }
+                
+                .functionalities{
+                    h3{
+                        color: $color-white;
+                    }
+                    div{
+                        p{
+                            color: $color-white;
+                        }
+                    }
+
+                }
+    
+                .buttonCardPayment{
+                    background-color: $color-accent-primary-yellow;
+                    border: 2px solid $color-accent-primary-yellow;
+                    a{
+                        color: $color-dark-primary;
+                    }
+                }
+                &:hover{
+                    border: 2px solid $color-accent-primary-yellow;
+                }
+        }
+        .card02Reportes{
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+            
+            .functionalities{
+                h3{
+                    color: $color-white;
+
+                }
+                .item{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 90%;
+                    margin-left: 8%;
+                    img{
+                        margin-right: 12px;
+                    }
+                    p{
+                        font-weight: 600;
+                        margin-bottom: 24px;
+                        font-weight: 400;
+                        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                        text-align:start ;
+
+                    }
+                }
+                .SPO{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    div{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 100%;
+                        margin-left: 3%;
+                        img{
+                            margin-right: 12px;
+                        }
+                        p{
+                            font-weight: 600;
+                            margin-bottom: 24px;
+                            font-weight: 400;
+                            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                            text-align:start ;
+                        }
+                    }
+                    .subItem{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-direction:column;
+                        width: 100%;
+                        margin-left: 8%;
+                        margin-top: 0px;
+                    }
+                    
+                }
+
+            }
+
+            .buttonCardPayment{
+                background-color: $color-accent-primary-yellow;
+                border: 2px solid $color-accent-primary-yellow;
+                a{
+                    color: $color-dark-primary;
+                }
+            }
+            &:hover{
+                border: 2px solid $color-accent-primary-yellow;
+            }
+        }
+          
+          
+
+    }
+}

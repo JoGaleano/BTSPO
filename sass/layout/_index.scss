@@ -1042,169 +1042,6 @@ width: 100vw;
         }
     }
 
-
-    /*#containerPayment{
-    width: 80%;
-    margin-left: 10%;
-    .carousel {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        width: 100%;
-        height: auto;
-        .card {
-            flex: 0 0 30%;
-            width: 80vw;
-            scroll-snap-align: center;
-            margin: 10px auto;
-            text-align: center;
-            padding-bottom: 6vh;
-            border-radius: 8px;
-            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-            position: relative;
-            transition: all ease 0.5s;
-            .title{
-                background-color: $color-dark-primary;
-                color: $color-white;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                padding-top: 4vh;
-                padding-left: 4vh;
-                border-bottom: 1px solid $color-accent-primary-cian;
-                p{
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    font-size: 1.5vw;
-                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                }
-            }
-            .description{
-                color: $color-dark-primary;
-                font-weight: 400;
-                font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                padding: 4vh;
-                text-align:start ;
-                font-size: 18px;
-            }
-
-            .preice{
-                p{
-                    color: $color-indigo-A700;
-                    font-weight: 600;
-                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                    padding: 1vh 4vh;
-                    text-align:start ;
-                    font-size: 16px;
-                }
-                h2{
-                    color: $color-indigo-A700;
-                    font-size: 6.5vh;
-                    font-weight: 900;
-                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                    span{
-                        font-size: 4.5vh;
-                        font-weight: 600;
-                    }
-                }
-            }
-
-            .functionalities{
-                padding-bottom: 4vh;
-                h3{
-                    color: $color-dark-primary;
-                    font-weight: 400;
-                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                    padding: 4vh 4vh 2vh 4vh;
-                    text-align:start ;
-                    font-size: 14px;
-
-                }
-                li{
-                    color: $color-dark-primary;
-                    font-weight: 400;
-                    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-                    text-align:start ;
-                    padding-left: 4vh;
-                    margin-bottom: 12px;
-                }
-                div{
-                    padding: 0vh 2vh;
-                }
-
-            }
-
-            .button{
-                position: absolute;
-                bottom: 0;
-                left: 20%;
-                margin-bottom: 30px;
-                
-                .buttonCardPayment{
-                    background-color: $color-indigo-A700;
-                    border: 2px solid $color-indigo-A700;
-                    transition: background-position 0.5s ease;
-                    a{
-                        color: $color-white;
-                    }
-                    &:hover{
-                        background-color: $color-accent-primary-yellow;
-                        border: 2px solid $color-accent-primary-yellow;
-                        background-position: 0 100%;
-                        a{
-                            color: $color-dark-primary;
-                        }
-                    }
-                 }
-            }
-            &:hover{
-                transform: scale(1.2);
-            }
-            
-          }
-
-
-
-        .card02{
-            background-image: url(../../assets/bg_card_payment.png);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-color: $color-dark-primary;
-            .description{
-                color: $color-white;
-            }
-
-            .preice{
-                p{
-                    color: $color-accent-primary-yellow;
-                }
-                h2{
-                    color: $color-white;
-                }
-            }
-            .functionalities{
-                h3{
-                    color: $color-white;
-
-                }
-                li{
-                    color: $color-white;
-                }
-            }
-
-            .buttonCardPayment{
-                background-color: $color-accent-primary-yellow;
-                border: 2px solid $color-accent-primary-yellow;
-                a{
-                    color: $color-dark-primary;
-                }
-            }
-        }
-      }
-      
-      
-    }*/
-
     #containerPayment{
         width: 80%;
         margin-left: 10%;
@@ -1327,21 +1164,21 @@ width: 100vw;
                 background-color: $color-dark-primary;
                 box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
                 .description{
-                    color: $color-white;
+                    color: $color-white !important;
                 }
     
                 .preice{
                     p{
-                        color: $color-accent-primary-yellow;
+                        color: $color-accent-primary-yellow !important;
                     }
                     h2{
-                        color: $color-white;
+                        color: $color-white !important;
                     }
                 }
                 
                 .functionalities{
                     h3{
-                        color: $color-white;
+                        color: $color-white !important;
     
                     }
                     .item{
