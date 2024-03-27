@@ -2694,7 +2694,8 @@ body {
     grid-area: image;
   }
   #reportsHeader .images .img img {
-    width: 100%;
+    width: 70%;
+    margin-left: 15vw;
   }
   #bannerPaymentReportes {
     width: 100vw;
